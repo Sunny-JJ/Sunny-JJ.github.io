@@ -1,22 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 
 
 
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
 
 
 
@@ -34,48 +27,18 @@
 
 
 
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
 
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
 
 
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -87,110 +50,85 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
 
 
 
 
 
 
-<meta name="description" content="##生成SSH key ###终端输入ssh-keygen -t rsa -C “username”1ssh-keygen -t rsa -C &amp;quot;username&amp;quot; (注：username为你git上的用户名) 如果执行成功。返回12Generating public/private rsa key pair.Enter file in which to save the ke">
+<meta name="description" content="生成SSH key终端输入ssh-keygen -t rsa -C “username”1ssh-keygen -t rsa -C &amp;quot;username&amp;quot; (注：username为你git上的用户名) 如果执行成功。返回12Generating public/private rsa key pair.Enter file in which to save the key (/Us">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github账号添加SSH key">
 <meta property="og:url" content="http://yoursite.com/2017/07/17/add-SSH-Keys/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##生成SSH key ###终端输入ssh-keygen -t rsa -C “username”1ssh-keygen -t rsa -C &amp;quot;username&amp;quot; (注：username为你git上的用户名) 如果执行成功。返回12Generating public/private rsa key pair.Enter file in which to save the ke">
+<meta property="og:description" content="生成SSH key终端输入ssh-keygen -t rsa -C “username”1ssh-keygen -t rsa -C &amp;quot;username&amp;quot; (注：username为你git上的用户名) 如果执行成功。返回12Generating public/private rsa key pair.Enter file in which to save the key (/Us">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-17T08:18:14.000Z">
+<meta property="og:updated_time" content="2017-08-17T10:18:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github账号添加SSH key">
-<meta name="twitter:description" content="##生成SSH key ###终端输入ssh-keygen -t rsa -C “username”1ssh-keygen -t rsa -C &amp;quot;username&amp;quot; (注：username为你git上的用户名) 如果执行成功。返回12Generating public/private rsa key pair.Enter file in which to save the ke">
+<meta name="twitter:description" content="生成SSH key终端输入ssh-keygen -t rsa -C “username”1ssh-keygen -t rsa -C &amp;quot;username&amp;quot; (注：username为你git上的用户名) 如果执行成功。返回12Generating public/private rsa key pair.Enter file in which to save the key (/Us">
 
 
 
-<script type="text/javascript" id="hexo.configurations">
+<script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
-    tabs: true,
     motion: true,
     duoshuo: {
-      userId: '0',
+      userId: 0,
       author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
-
-
-  <link rel="canonical" href="http://yoursite.com/2017/07/17/add-SSH-Keys/"/>
-
-
-
-
-
-  <title>github账号添加SSH key | Hexo</title>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <title> github账号添加SSH key | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
+
+
+
+
+
+
+
+
+
+
+  
   
     
   
 
-  <div class="container sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+      <div class="header-inner"><div class="site-meta ">
+  
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
   </div>
+  <p class="site-subtitle"></p>
+</div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
 </div>
 
 <nav class="site-nav">
@@ -203,7 +141,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
             首页
           </a>
@@ -211,9 +149,9 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
             归档
           </a>
@@ -221,9 +159,9 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
             标签
           </a>
@@ -236,8 +174,6 @@
 
   
 </nav>
-
-
 
  </div>
     </header>
@@ -252,53 +188,38 @@
     
 
   
-
-  
-  
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/17/add-SSH-Keys/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">github账号添加SSH key</h1>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                github账号添加SSH key
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-17T10:34:21+08:00">
-                2017-07-17
-              </time>
-            
-
-            
-
-            
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-07-17T10:34:21+08:00" content="2017-07-17">
+              2017-07-17
+            </time>
           </span>
 
           
@@ -308,59 +229,44 @@
           
 
           
-          
 
           
-
-          
-
           
 
         </div>
       </header>
     
 
-    
-    
-    
+
     <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <p>##生成SSH key</p>
-<p>###终端输入ssh-keygen -t rsa -C “username”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;username&quot; (注：username为你git上的用户名)</div></pre></td></tr></table></figure></p>
+        <h2 id="生成SSH-key"><a href="#生成SSH-key" class="headerlink" title="生成SSH key"></a>生成SSH key</h2><h3 id="终端输入ssh-keygen-t-rsa-C-“username”"><a href="#终端输入ssh-keygen-t-rsa-C-“username”" class="headerlink" title="终端输入ssh-keygen -t rsa -C “username”"></a>终端输入ssh-keygen -t rsa -C “username”</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;username&quot; (注：username为你git上的用户名)</div></pre></td></tr></table></figure>
 <p>如果执行成功。返回<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file in which to save the key (/Users/username/.ssh/id_rsa):</div></pre></td></tr></table></figure></p>
 <p>首先，说明一下，这里的username是你电脑上的用户名<br>然后，在这里就是设置存储地址了.我们直接按回车，会出现一下两种情况的一种：<br>（1）如果正常运行的话，会出现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Enter passphrase (empty for no passphrase):</div></pre></td></tr></table></figure></p>
-<p>###然后我们直接回车<br>（2）有的时候我们可能会出现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/Users/your username/.ssh/id_rsa already exists.</div><div class="line">Overwrite (y/n)?</div></pre></td></tr></table></figure></p>
+<h3 id="然后我们直接回车"><a href="#然后我们直接回车" class="headerlink" title="然后我们直接回车"></a>然后我们直接回车</h3><p>（2）有的时候我们可能会出现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/Users/your username/.ssh/id_rsa already exists.</div><div class="line">Overwrite (y/n)?</div></pre></td></tr></table></figure></p>
 <p>这说明你已经设置了存储地址，我们输入“y”覆盖<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Overwrite (y/n)? y</div></pre></td></tr></table></figure></p>
-<p>###回车出现again</p>
-<p>上面的任意两种情况之后，会出现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Enter same passphrase again:</div></pre></td></tr></table></figure></p>
-<p>###再次回车，生成成功：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">Your identification has been saved in /Users/username/.ssh/id_rsa.</div><div class="line">Your public key has been saved in /Users/username/.ssh/id_rsa.pub.</div><div class="line">The key fingerprint is:</div><div class="line">58:42:8b:58:ad:4b:b5:b9:6d:79:bf:8c:f9:e2:2b:ed </div><div class="line">username</div><div class="line">The key&apos;s randomart image is:</div><div class="line">+--[ RSA 2048]----+</div><div class="line">|    ...          |</div><div class="line">|   o oo.         |</div><div class="line">|  . .ooo.        |</div><div class="line">|    o o+         |</div><div class="line">|   . ..oS.       |</div><div class="line">|    . . + .      |</div><div class="line">|       . o .     |</div><div class="line">|        . o+.    |</div><div class="line">|         +E++.   |</div><div class="line">+-----------------+</div></pre></td></tr></table></figure></p>
+<h3 id="回车出现again"><a href="#回车出现again" class="headerlink" title="回车出现again"></a>回车出现again</h3><p>上面的任意两种情况之后，会出现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Enter same passphrase again:</div></pre></td></tr></table></figure></p>
+<h3 id="再次回车，生成成功："><a href="#再次回车，生成成功：" class="headerlink" title="再次回车，生成成功："></a>再次回车，生成成功：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">Your identification has been saved in /Users/username/.ssh/id_rsa.</div><div class="line">Your public key has been saved in /Users/username/.ssh/id_rsa.pub.</div><div class="line">The key fingerprint is:</div><div class="line">58:42:8b:58:ad:4b:b5:b9:6d:79:bf:8c:f9:e2:2b:ed </div><div class="line">username</div><div class="line">The key&apos;s randomart image is:</div><div class="line">+--[ RSA 2048]----+</div><div class="line">|    ...          |</div><div class="line">|   o oo.         |</div><div class="line">|  . .ooo.        |</div><div class="line">|    o o+         |</div><div class="line">|   . ..oS.       |</div><div class="line">|    . . + .      |</div><div class="line">|       . o .     |</div><div class="line">|        . o+.    |</div><div class="line">|         +E++.   |</div><div class="line">+-----------------+</div></pre></td></tr></table></figure>
 <p>这说明SSH key就已经生成了。文件目录就是：/Users/username/.ssh/id_rsa.pub.<br>我们执行cat命令查看文件的内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat /User/username/.ssh/id_rsa.pub</div></pre></td></tr></table></figure></p>
 <p>这时候会看见：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-rsa AAAAB3NzaC1yc2...</div></pre></td></tr></table></figure></p>
 <p>后面的内容我省略了<br>(说明：ssh-rsa 后面的内容这就是你的SSH keys)<br>把显示出来的SSH<br> keys直接添加到github账户设置里边的SSH keys<br>最后再执行git clone命令就可以了</p>
-<p>##使用git遇到的问题<br>我们在使用git clone 或其他命令的时候，有时候会遇到这类问题，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">fatal: Could not read from remote repository.</div><div class="line"></div><div class="line">Please make sure you have the correct access rights</div><div class="line">and the repository exists.</div><div class="line">fatal: Could not read from remote</div><div class="line"> repository.Please make sure you</div><div class="line"> have the correct access rights and the repository exists.</div></pre></td></tr></table></figure></p>
+<h2 id="使用git遇到的问题"><a href="#使用git遇到的问题" class="headerlink" title="使用git遇到的问题"></a>使用git遇到的问题</h2><p>我们在使用git clone 或其他命令的时候，有时候会遇到这类问题，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">fatal: Could not read from remote repository.</div><div class="line"></div><div class="line">Please make sure you have the correct access rights</div><div class="line">and the repository exists.</div><div class="line">fatal: Could not read from remote</div><div class="line"> repository.Please make sure you</div><div class="line"> have the correct access rights and the repository exists.</div></pre></td></tr></table></figure></p>
 <p>出现这个问题是因为没有在github账号添加SSH key，按上面的步骤添加就可以了~</p>
 
       
     </div>
-    
-    
-    
 
-    
-
-    
-
-    
+    <div>
+      
+        
+      
+    </div>
 
     <footer class="post-footer">
-      
-
-      
-      
       
 
       
@@ -372,8 +278,6 @@
               </a>
             
           </div>
-
-          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -388,10 +292,6 @@
       
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -425,33 +325,36 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="/images/default_avatar.jpg"
                alt="John Doe" />
           <p class="site-author-name" itemprop="name">John Doe</p>
-           
-              <p class="site-description motion-element" itemprop="description"></p>
-          
+          <p class="site-description motion-element" itemprop="description"></p>
         </div>
         <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives/">
-                <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
 
           
 
@@ -469,15 +372,23 @@
         
 
         
-        
-
-        
-
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
 
       </section>
 
       
-
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#生成SSH-key"><span class="nav-number">1.</span> <span class="nav-text">生成SSH key</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#终端输入ssh-keygen-t-rsa-C-“username”"><span class="nav-number">1.1.</span> <span class="nav-text">终端输入ssh-keygen -t rsa -C “username”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#然后我们直接回车"><span class="nav-number">1.2.</span> <span class="nav-text">然后我们直接回车</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#回车出现again"><span class="nav-number">1.3.</span> <span class="nav-text">回车出现again</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#再次回车，生成成功："><span class="nav-number">1.4.</span> <span class="nav-text">再次回车，生成成功：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用git遇到的问题"><span class="nav-number">2.</span> <span class="nav-text">使用git遇到的问题</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -500,9 +411,8 @@
   <span class="author" itemprop="copyrightHolder">John Doe</span>
 </div>
 
-
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
@@ -513,22 +423,22 @@
 </div>
 
 
-        
 
-        
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
+
+
+  
+
+
+
 
 <script type="text/javascript">
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
@@ -537,51 +447,25 @@
 </script>
 
 
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
 
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
 
 
 
@@ -589,29 +473,15 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=0.5.0"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
 
 
 
@@ -619,27 +489,12 @@
 
 
 
-
-
   
 
 
 
-
-
-
   
-
-
-
-
-
   
-
-  
-
-  
-
   
 
   
