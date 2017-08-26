@@ -1,33 +1,927 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[hexo next 设置]]></title>
-    <url>%2F2017%2F08%2F19%2Fhexo-next%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2017%2F08%2F17%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Javascript 菜鸟教程]]></title>
-    <url>%2F2017%2F08%2F15%2FJavascript%2F</url>
-    <content type="text"><![CDATA[JavaScript 基础JavaScript 教程JavaScript 简介JavaScript 用法JavaScript 输出JavaScript 语法 JavaScript 语句 JavaScript 语句向浏览器发出的命令。语句的作用是告诉浏览器该做什么。 1.JavaScript 语句 下面的 JavaScript 语句向 id=”demo” 的 HTML 元素输出文本 “你好 Dolly” ： 1document.getElementById(&quot;demo&quot;).innerHTML = &quot;你好 Dolly&quot;; 分号用于分隔 JavaScript 语句。通常我们在每条可执行的语句结尾添加分号。使用分号的另一用处是在一行中编写多条语句： 12345a = 5;b = 6;c = a + b;以上实例也可以这么写:a = 5; b = 6; c = a + b; 3.JavaScript 代码 JavaScript 代码是 JavaScript 语句的序列。浏览器按照编写顺序依次执行每条语句。 本例向网页输出一个标题和两个段落： 12document.getElementById(&quot;demo&quot;).innerHTML=&quot;你好 Dolly&quot;;document.getElementById(&quot;myDIV&quot;).innerHTML=&quot;你最近怎么样?&quot;; 4.JavaScript 代码块 JavaScript 可以分批地组合起来。代码块以左花括号开始，以右花括号结束。代码块的作用是一并地执行语句序列。 本例向网页输出一个标题和两个段落： 12345function myFunction()&#123; document.getElementById(&quot;demo&quot;).innerHTML=&quot;你好Dolly&quot;; document.getElementById(&quot;myDIV&quot;).innerHTML=&quot;你最近怎么样?&quot;;&#125; 5.JavaScript 语句标识符JavaScript 语句通常以一个 语句标识符 为开始，并执行该语句。语句标识符是保留关键字不能作为变量名使用。 下表列出了 JavaScript 语句标识符 (关键字) ： 语句 描述 break 用于跳出循环。 catch 语句块，在 try 语句块执行出错时执行 catch 语句块。 continue 跳过循环中的一个迭代。 do … while 执行一个语句块，在条件语句为 true 时继续执行该语句块。 for 在条件语句为 true 时，可以将代码块执行指定的次数。 for … in 用于遍历数组或者对象的属性（对数组或者对象的属性进行循环操作）。 function 定义一个函数 if … else 用于基于不同的条件来执行不同的动作。 return 退出函数 switch 用于基于不同的条件来执行不同的动作。 throw 抛出（生成）错误 。 try 实现错误处理，与 catch 一同使用。 var 声明一个变量。 while 当条件语句为 true 时，执行语句块。 6.空格JavaScript 会忽略多余的空格。您可以向脚本添加空格，来提高其可读性。下面的两行代码是等效的：12var person=&quot;Hege&quot;;var person = &quot;Hege&quot;; 对代码行进行折行您可以在文本字符串中使用反斜杠对代码行进行换行。下面的例子会正确地显示：12345document.write(&quot;你好 \世界!&quot;);不过，您不能像这样折行：document.write \ (&quot;你好世界!&quot;); 您知道吗？提示：JavaScript 是脚本语言。浏览器会在读取代码时，逐行地执行脚本代码。而对于传统编程来说，会在执行前对所有代码进行编译。 JavaScript 注释 JavaScript 注释可用于提高代码的可读性。 1.JavaScript 注释 JavaScript 不会执行注释。我们可以添加注释来对 JavaScript 进行解释，或者提高代码的可读性。单行注释以 // 开头。 本例用单行注释来解释代码：1234// 输出标题：document.getElementById(&quot;myH1&quot;).innerHTML=&quot;欢迎来到我的主页&quot;;// 输出段落：document.getElementById(&quot;myP&quot;).innerHTML=&quot;这是我的第一个段落。&quot;; 2.JavaScript 多行注释 多行注释以 / 开始，以 / 结尾。下面的例子使用多行注释来解释代码：1234567/*下面的这些代码会输出一个标题和一个段落并将代表主页的开始*/document.getElementById(&quot;myH1&quot;).innerHTML=&quot;欢迎来到我的主页&quot;;document.getElementById(&quot;myP&quot;).innerHTML=&quot;这是我的第一个段落。&quot;; 3.使用注释来阻止执行 在下面的例子中，注释用于阻止其中一条代码行的执行（可用于调试）： 1234567//document.getElementById(&quot;myH1&quot;).innerHTML=&quot;欢迎来到我的主页&quot;;document.getElementById(&quot;myP&quot;).innerHTML=&quot;这是我的第一个段落。&quot;;/*document.getElementById(&quot;myH1&quot;).innerHTML=&quot;欢迎来到我的主页&quot;;document.getElementById(&quot;myP&quot;).innerHTML=&quot;这是我的第一个段落。&quot;;*/ 4.在行末使用注释 在下面的例子中，我们把注释放到代码行的结尾处：12var x=5; // 声明 x 并把 5 赋值给它var y=x+2; // 声明 y 并把 x+2 赋值给它 养成一个好的习惯就是写注释 123养成一个好的习惯就是写注释。方便你二次阅读，维护你的代码。如果后面项目转手，也方便别人来理解你的代码和维护你的代码。 JavaScript 变量 变量是用于存储信息的”容器”。 123var x=5;var y=6;var z=x+y; 您可以把变量看做存储数据的容器。 变量必须以字母开头 变量也能以 $ 和 _ 符号开头（不过我们不推荐这么做） 变量名称对大小写敏感（y 和 Y 是不同的变量） JavaScript 语句和 JavaScript 变量都对大小写敏感。 当您向变量分配文本值时，应该用双引号或单引号包围这个值。当您向变量赋的值是数值时，不要使用引号。如果您用引号包围数值，该值会被作为文本来处理。 123var pi=3.14;var person=&quot;John Doe&quot;;var answer=&apos;Yes I am!&apos;; 1.声明（创建） JavaScript 变量 在 JavaScript 中创建变量通常称为”声明”变量。 我们使用 var 关键词来声明变量： 1var carname; 变量声明之后，该变量是空的（它没有值）。如需向变量赋值，请使用等号： 1carname=&quot;Volvo&quot;; 不过，您也可以在声明变量时对其赋值： 1var carname=&quot;Volvo&quot;; 在下面的例子中，我们创建了名为 carname 的变量，并向其赋值 “Volvo”，然后把它放入 id=”demo” 的 HTML 段落中： 123&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;var carname=&quot;Volvo&quot;;document.getElementById(&quot;demo&quot;).innerHTML=carname; 一个好的编程习惯是，在代码开始处，统一对需要的变量进行声明。 一条语句，多个变量您可以在一条语句中声明很多变量。该语句以 var 开头，并使用逗号分隔变量即可： 1var lastname=&quot;Doe&quot;, age=30, job=&quot;carpenter&quot;; 声明也可横跨多行： 123var lastname=&quot;Doe&quot;,age=30,job=&quot;carpenter&quot;; Value = undefined在计算机程序中，经常会声明无值的变量。未使用值来声明的变量，其值实际上是 undefined。在执行过以下语句后，变量 carname 的值将是 undefined：var carname; 重新声明 JavaScript 变量 如果重新声明 JavaScript 变量，该变量的值不会丢失：在以下两条语句执行后，变量 carname 的值依然是 “Volvo”： 12var carname=&quot;Volvo&quot;; var carname; JavaScript 数据类型 字符串（String）、数字(Number)、布尔(Boolean)、数组(Array)、对象(Object)、空（Null）、未定义（Undefined）。 JavaScript 拥有动态类型JavaScript 拥有动态类型。这意味着相同的变量可用作不同的类型：123var x; // x 为 undefinedvar x = 5; // 现在 x 为数字var x = &quot;John&quot;; // 现在 x 为字符串 JavaScript 字符串字符串是存储字符（比如 “Bill Gates”）的变量。字符串可以是引号中的任意文本。您可以使用单引号或双引号：12var carname=&quot;Volvo XC60&quot;;var carname=&apos;Volvo XC60&apos;; 您可以在字符串中使用引号，只要不匹配包围字符串的引号即可：123var answer=&quot;It&apos;s alright&quot;;var answer=&quot;He is called &apos;Johnny&apos;&quot;;var answer=&apos;He is called &quot;Johnny&quot;&apos;; JavaScript 数字JavaScript 只有一种数字类型。数字可以带小数点，也可以不带：12var x1=34.00; //使用小数点来写var x2=34; //不使用小数点来写 极大或极小的数字可以通过科学（指数）计数法来书写：12var y=123e5; // 12300000var z=123e-5; // 0.00123 JavaScript 布尔布尔（逻辑）只能有两个值：true 或 false。12var x=true;var y=false; JavaScript 数组下面的代码创建名为 cars 的数组：1234567var cars=new Array();cars[0]=&quot;Saab&quot;;cars[1]=&quot;Volvo&quot;;cars[2]=&quot;BMW&quot;;或者 (condensed array):var cars=new Array(&quot;Saab&quot;,&quot;Volvo&quot;,&quot;BMW&quot;);或者 (literal array): 实例1var cars=[&quot;Saab&quot;,&quot;Volvo&quot;,&quot;BMW&quot;]; 数组下标是基于零的，所以第一个项目是 [0]，第二个是 [1]，以此类推。 数组声明有四种方式：123var arr1 = new Array(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;); //这是一个预定义的数组，在创建时初始化var arr2 = [&apos;a&apos;, &apos;b&apos;,&apos; &apos;c&apos; ]; //同样是在创建时初始化，但是这种创建更为边界直观var arr3 = new Array( ); var arr4 = [ ]; //这两种是创建空的数组 在数组操作中，最值得注意的是下标的使用，容易出错 JavaScript 对象对象由花括号分隔。在括号内部，对象的属性以名称和值对的形式 (name : value) 来定义。属性由逗号分隔：对象的创建，一般推荐使用这种方法12var person = &#123;firstname:&quot;John&quot;, lastname:&quot;Doe&quot;, id:5566&#125;;var perple = &#123;name : &apos;Tom&apos;, age : 21 , eat : function()&#123; &#125; &#125; 上面第一个例子中的对象 (person) 有三个属性：firstname、lastname 以及 id。空格和折行无关紧要。声明可横跨多行： 12345var person=&#123; firstname : &quot;John&quot;, lastname : &quot;Doe&quot;, id : 5566&#125;; 也可先创建对象再追加属性和方法1234var people = new Ojbect();people.name = &quot;Tom&quot;; people.age = 21; people.eat = function()&#123; &#125; 对象属性有两种寻址方式：12name=person.lastname;name=person[&quot;lastname&quot;]; Undefined 和 NullUndefined 这个值表示变量不含有值。可以通过将变量的值设置为 null 来清空变量。12cars=null;person=null; 声明变量类型当您声明新变量时，可以使用关键词 “new” 来声明其类型：12345var carname=new String;var x= new Number;var y= new Boolean;var cars= new Array;var person= new Object; lamp JavaScript 变量均为对象。当您声明一个变量时，就创建了一个新的对象。 JavaScript 对象 JavaScript 对象是拥有属性和方法的数据。 真实生活中的对象，属性和方法真实生活中，一辆汽车是一个对象。对象有它的属性，如重量和颜色等，方法有启动停止等: 对象 属性 方法 car.name = Fiatcar.model = 500car.weight = 850kgcar.color = white car.start()car.drive()car.brake()car.stop 所有汽车都有这些属性，但是每款车的属性都不尽相同。所有汽车都拥有这些方法，但是它们被执行的时间都不尽相同。 JavaScript 对象在 JavaScript中，几乎所有的事物都是对象。 在 JavaScript 中，对象是非常重要的，当你理解了对象，就可以了解 JavaScript。 以下代码为变量 car 设置值为 “Fiat” :1var car = &quot;Fiat&quot;; 对象也是一个变量，但对象可以包含多个值（多个变量）。1var car = &#123;type:&quot;Fiat&quot;, model:500, color:&quot;white&quot;&#125;; 在以上实例中，3 个值 (“Fiat”, 500, “white”) 赋予变量 car。在以上实例中，3 个变量 (type, model, color) 赋予变量 car。 JavaScript 对象是变量的容器。 对象定义你可以使用字符来定义和创建 JavaScript 对象:1var person = &#123;firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;&#125;; 定义 JavaScript 对象可以跨越多行，空格跟换行不是必须的：123456var person = &#123; firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;&#125;; 对象属性可以说 “JavaScript 对象是变量的容器”。但是，我们通常认为 “JavaScript 对象是键值对的容器”。键值对通常写法为 name : value (键与值以冒号分割)。键值对在 JavaScript 对象通常称为 对象属性。 JavaScript 对象是属性变量的容器。 对象键值对的写法类似于：1.PHP 中的关联数组2.Python 中的字典3.C 语言中的哈希表4.Java 中的哈希映射5.Ruby 和 Perl 中的哈希表 访问对象属性你可以通过两种方式访问对象属性:1234法一：person.lastName;法二：person[&quot;lastName&quot;]; 对象方法对象的方法定义了一个函数，并作为对象的属性存储。对象方法通过添加 () 调用 (作为一个函数)。该实例访问了 person 对象的 fullName() 方法:name = person.fullName();1.创建和使用对象方法。2.对象方法作为一个函数定义存储在对象属性中。12345678910111213var person = &#123; firstName: &quot;John&quot;, lastName : &quot;Doe&quot;, id : 5566, fullName : function() &#123; return this.firstName + &quot; &quot; + this.lastName; &#125;&#125;;document.getElementById(&quot;demo&quot;).innerHTML = person.fullName();结果：John Doe 如果你要访问 person 对象的 fullName 属性，它将作为一个定义函数的字符串返回：name = person.fullName;1.创建和使用对象方法。2.对象方法是一个函数定义,并作为一个属性值存储。123456789101112131415var person = &#123; firstName: &quot;John&quot;, lastName : &quot;Doe&quot;, id : 5566, fullName : function() &#123; return this.firstName + &quot; &quot; + this.lastName; &#125;&#125;;document.getElementById(&quot;demo1&quot;).innerHTML = &quot;不加括号输出函数表达式：&quot; + person.fullName;document.getElementById(&quot;demo2&quot;).innerHTML = &quot;加括号输出函数执行结果：&quot; + person.fullName();结果：不加括号输出函数表达式：function () &#123; return this.firstName + &quot; &quot; + this.lastName; &#125;加括号输出函数执行结果：John Doe JavaScript 对象是属性和方法的容器。 访问对象方法你可以使用以下语法创建对象方法：1methodName : function() &#123; code lines &#125; 你可以使用以下语法访问对象方法：1objectName.methodName() 通常 fullName() 是作为 person 对象的一个方法， fullName 是作为一个属性。有多种方式可以创建，使用和修改 JavaScript 对象。同样也有多种方式用来创建，使用和修改属性和方法。 更多实例创建 JavaScript 对象12345678910111213法一：一行var person = &#123;firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;&#125;;法二：多行var person = &#123; firstName : &quot;John&quot;, lastName : &quot;Doe&quot;, age : 50, eyeColor : &quot;blue&quot;&#125;;document.getElementById(&quot;demo&quot;).innerHTML = person.firstName + &quot; 现在 &quot; + person.age + &quot; 岁。&quot;;结果：John 现在 50 岁. 访问对象属性有两种方式可以访问对象属性：.property 或 [“property”].12345678910111213var person = &#123; firstName : &quot;John&quot;, lastName : &quot;Doe&quot;, id : 5566&#125;;法一：.propertydocument.getElementById(&quot;demo&quot;).innerHTML = person.firstName + &quot; &quot; + person.lastName;法二：[&quot;property&quot;]document.getElementById(&quot;demo&quot;).innerHTML = person[&quot;firstName&quot;] + &quot; &quot; + person[&quot;lastName&quot;];结果：John Doe 函数属性作为一个方法访问创建和使用对象方法。对象方法作为一个函数定义存储在对象属性中。123456789101112131415var person = &#123; firstName: &quot;John&quot;, lastName : &quot;Doe&quot;, id : 5566, fullName : function() &#123; return this.firstName + &quot; &quot; + this.lastName; &#125;&#125;;document.getElementById(&quot;demo&quot;).innerHTML = person.fullName();结果：John Doe 函数属性作为一个属性访问创建和使用对象方法。对象方法是一个函数定义,并作为一个属性值存储。123456789101112131415var person = &#123; firstName: &quot;John&quot;, lastName : &quot;Doe&quot;, id : 5566, fullName : function() &#123; return this.firstName + &quot; &quot; + this.lastName; &#125;&#125;;document.getElementById(&quot;demo1&quot;).innerHTML = &quot;不加括号输出函数表达式：&quot; + person.fullName;document.getElementById(&quot;demo2&quot;).innerHTML = &quot;加括号输出函数执行结果：&quot; + person.fullName();结果：不加括号输出函数表达式：function () &#123; return this.firstName + &quot; &quot; + this.lastName; &#125;加括号输出函数执行结果：John Doe 总结1.JavaScript对象:属性和方法的容器;2.对象的属性之间一定要用逗号隔开;3.对象的方法定义了一个函数，并作为对象的属性存储。4.对象方法通过添加 () 调用 (作为一个函数)。 JavaScript 函数]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[github账号添加SSH key]]></title>
-    <url>%2F2017%2F07%2F17%2Fadd-SSH-Keys%2F</url>
-    <content type="text"><![CDATA[生成SSH key终端输入ssh-keygen -t rsa -C “username”1ssh-keygen -t rsa -C &quot;username&quot; (注：username为你git上的用户名) 如果执行成功。返回12Generating public/private rsa key pair.Enter file in which to save the key (/Users/username/.ssh/id_rsa): 首先，说明一下，这里的username是你电脑上的用户名然后，在这里就是设置存储地址了.我们直接按回车，会出现一下两种情况的一种：（1）如果正常运行的话，会出现1Enter passphrase (empty for no passphrase): 然后我们直接回车（2）有的时候我们可能会出现12/Users/your username/.ssh/id_rsa already exists.Overwrite (y/n)? 这说明你已经设置了存储地址，我们输入“y”覆盖1Overwrite (y/n)? y 回车出现again上面的任意两种情况之后，会出现1Enter same passphrase again: 再次回车，生成成功：1234567891011121314151617Your identification has been saved in /Users/username/.ssh/id_rsa.Your public key has been saved in /Users/username/.ssh/id_rsa.pub.The key fingerprint is:58:42:8b:58:ad:4b:b5:b9:6d:79:bf:8c:f9:e2:2b:ed usernameThe key&apos;s randomart image is:+--[ RSA 2048]----+| ... || o oo. || . .ooo. || o o+ || . ..oS. || . . + . || . o . || . o+. || +E++. |+-----------------+ 这说明SSH key就已经生成了。文件目录就是：/Users/username/.ssh/id_rsa.pub.我们执行cat命令查看文件的内容：1cat /User/username/.ssh/id_rsa.pub 这时候会看见：1ssh-rsa AAAAB3NzaC1yc2... 后面的内容我省略了(说明：ssh-rsa 后面的内容这就是你的SSH keys)把显示出来的SSH keys直接添加到github账户设置里边的SSH keys最后再执行git clone命令就可以了 使用git遇到的问题我们在使用git clone 或其他命令的时候，有时候会遇到这类问题，如：1234567fatal: Could not read from remote repository.Please make sure you have the correct access rightsand the repository exists.fatal: Could not read from remote repository.Please make sure you have the correct access rights and the repository exists. 出现这个问题是因为没有在github账号添加SSH key，按上面的步骤添加就可以了~]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[教你用Hexo+Github 搭建属于自己的博客]]></title>
-    <url>%2F2017%2F07%2F14%2Fhexo-github%2F</url>
-    <content type="text"><![CDATA[大概可以分为以下几个步骤 搭建环境准备（包括node.js和git环境，gitHub账户的配置） 安装Hexo 配置Hexo 怎样将Hexo与github page 联系起来 怎样发布文章 主题 推荐 主题Net的简单配置 添加sitemap和feed插件 添加404 公益页面 搭建环境准备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大概可以分为以下三步 Node.js 的安装和准备 git的安装和准备 gitHub账户的配置 配置Node.js环境&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下载Node.js安装文件： Windows Installer 32-bitWindows Installer 64-bit根据自己的Windows版本选择相应的安装文件，要是不知道，就安装32-bit的吧- -。 如图所示： 保持默认设置即可，一路Next，安装很快就结束了。 然后我们检查一下是不是要求的组件都安装好了 配置Git环境github账户的注册和配置创建代码库登陆之后，点击页面右上角的加号，选择New repository： 新建代码库进入代码库创建页面：在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述（不写也没有关系），如图所示： 注意：比如我的github名称是jj ,这里你就填 jj.github.io,如果你的名字是sunny，那你就填 sunny.github.io 代码库设置正确创建之后，你将会看到如下界面： 接下来开启gh-pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，选择theme，生成访问地址，如图： 如果yourname.github.io已经可以正常访问了，那么Github一侧的配置已经全部结束了。到此搭建hexo博客的相关环境配置已经完成，下面开始讲解Hexo的相关配置 安装Hexo在自己认为合适的地方创建一个文件夹，并在命令行的窗口进入到该目录 设置npm淘宝镜像站1.npm默认的源的下载速度可能很慢，建议使用淘宝镜像替换。2.执行下面的命令，将npm的源设置成淘宝镜像站。 12345npm config set registry &quot;https://registry.npm.taobao.org&quot;或者npm install -g cnpm --registry=https://registry.npm.taobao.org 执行以下命令安装hexo。123456789101112# 安装hexonpm install hexo-cli g# 在博客文件夹blog中初始化hexohexo init# 安装hexo的扩展插件npm install或者sudo cnpm install hero-cli -ghexo initsudo cnpm install 首次体验Hexo继续操作，同样是在命令行中，输入：1234# 生成静态页面hexo generate# 开启本地服务器hexo server 然后会提示： INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.在浏览器中打开http://localhost:4000/，你将会看到你的博客~ 到目前为止，Hexo在本地的配置已经全都结束了。下面会讲解怎样将Hexo与github page 联系起来 怎样将Hexo与github page 联系起来大概分为以下几步 配置git个人信息配置Deployment 配置Git个人信息如果你之前已经配置好git个人信息，请跳过这一个 步骤，直接来到 设置Git的user name和email：(如果是第一次的话)12git config --global user.name &quot;xx&quot;git config --global user.email &quot;xxx@163.com&quot; 生成密钥1ssh-keygen -t rsa -C &quot;xxx@163.com&quot; 配置Deployment同样在_config.yml文件中，找到Deployment，然后按照如下修改：1234567deploy: # 类型 type: git # 仓库 repo: git@github.com:yourname/yourname.github.io.git # 分支 branch: master 比如我的仓库的地址是git@github.com:sunny/sunny.github.io.git，所以配置如下 1234deploy: type: git repo: git@github.com:sunny/sunny.github.io.git branch: master 写博客、发布文章输入下面的命令新建一篇博客，并将hexo博客部署到github中12345678# 新建一篇文章hexo new &quot;article title&quot;# 清空静态页面hexo clean# 生成静态页面hexo generate# 部署 hexo deploy 这时候在我的 电脑的目录下 \hexo\source\ _posts 将会看到 article title.md 文件，用MarDown编辑器打开就可以编辑文章了 hexo命令缩写12345678#生成静态页面hexo g：hexo generate # 清空静态页面hexo c：hexo clean# 开启本地服务器hexo s：hexo server# 部署 hexo d：hexo deploy 当然你也可以执行下面的命令，相当于上面两条命令的效果123456789# 清除、生成、启动hexo clean &amp;&amp; hexo g -s# 清除、生成、部署hexo clean &amp;&amp; hexo g -d# 生成、启动hexo g -s# 生成、部署hexo g -dhexo d -g 部署成功后访问 你的地址，https://yourName.github.io（这里输入我的地址： https://sunny-jj.github.io ),将可以看到生成的文章。 常见问题hexo deploy没有反应？修改配置文件：_config.yml时，冒号后面没加空格。 hexo s 网站打不开？端口占用，换个端口就好了。执行命令hexo s -p 5000，并在浏览器地址栏输入http://localhost:5000，回车访问。 如何换主题？将主题下载后，放到themes文件夹中即可。例如，下面命令安装next主题：git clone https://github.com/iissnan/hexo-theme-next themes/nexthttp://theme-next.iissnan.com/getting-started.html#sidebar-settings hexo3.0以上版本问题搭建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误1.deploy的type 的github需要改成git2.npm install hexo-deployer-git –save 改了之后执行，然后再部署]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[markdown]]></title>
-    <url>%2F2014%2F08%2F12%2Fmarkdown%2F</url>
-    <content type="text"><![CDATA[斜体和粗体代码：1234*斜体*或_斜体_**粗体*****加粗斜体***~~删除线~~ 显示效果：粗体加粗斜体删除线 分级标题 #index第一种写法： 1234这是一个一级标题============================这是一个二级标题-------------------------------------------------- 第二种写法：123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题 超链接 Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。 行内式语法说明 [ ]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。链接文字’这样的形式。链接地址与链接标题前有一个空格。 代码：12欢迎来到[sunny-jj](https://sunny-jj.github.io)欢迎来到[sunny-jj](https://sunny-jj.github.io &quot;sunny-jj&quot;) 显示效果：欢迎来到sunny-jj欢迎来到sunny-jj 参考式 参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。 语法说明： 参考式链接分为两部分，文中的写法 [链接文字][链接标记]，在文本的任意位置添加[链接标记]:链接地址 “链接标题”，链接地址与链接标题前有一个空格。 如果链接文字本身可以做为链接标记，你也可以写成[链接文字][][链接文字]：链接地址的形式，见代码的最后一行。 代码： 123456我经常去的几个网站[Google][1]、[Baidu][2]以及[自己的博客][3][Leanote 笔记][2]是一个不错的[网站][]。[1]:http://www.google.com &quot;Google&quot;[2]:https://www.baidu.com/ &quot;Baidu&quot;[3]:https://sunny-jj.github.io &quot;sunny-jj&quot;[网站]:https://sunny-jj.github.io 显示效果：我经常去的几个网站Google、Leanote以及自己的博客Leanote 笔记是一个不错的网站。 自动链接语法说明： Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如： 代码：12&lt;http://example.com/&gt;&lt;address@example.com&gt; 显示效果：http://example.com/&#x61;&#100;&#100;&#114;&#101;&#115;&#x73;&#64;&#x65;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d; 锚点 网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。 注意： Markdown Extra 只支持在标题后插入锚点，其它地方无效。 Leanote 编辑器右侧显示效果区域暂时不支持锚点跳转，所以点来点去发现没有跳转不必惊慌，但是你发布成笔记或博文后是支持跳转的。 语法描述： 在你准备跳转到的指定标题后插入锚点 #标记，然后在文档的其它地方写上连接到锚点的链接。 代码：12## 0. 分级标题 #index跳转到[分级标题11](#index) 跳转到分级标题 列表无序列表 使用 *，+，- 表示无序列表。 代码：123- 无序列表项 一- 无序列表项 二- 无序列表项 三 显示效果： 无序列表项 一 无序列表项 二 无序列表项 三 有序列表 有序列表则使用数字接着一个英文句点。 代码：1231. 有序列表项 一2. 有序列表项 二3. 有序列表项 三 显示效果： 有序列表项 一 有序列表项 二 有序列表项 三 定义型列表语法说明： 定义型列表由名词和解释组成。一行写上定义，紧跟一行写上解释。解释的写法:紧跟一个缩进(Tab) 代码：12345Markdown: 轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）代码块 2: 这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格） 代码块（左侧有八个不可见的空格） 显示效果： Markdown: 轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）代码块 2: 这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格） 列表缩进语法说明： 列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。 要让列表看起来更漂亮，你可以把内容用固定的缩进整理好（显示效果与代码一致）： 列表列表 代码：12* 列表列表 显示效果： 列表列表 包含引用的列表语法说明： 如果要在列表项目内放进引用，那 &gt; 就需要缩进： 代码：123* 阅读的方法: &gt; 打开书本。 &gt; 打开电灯。 显示效果： 阅读的方法: 打开书本。打开电灯。 包含代码区块的引用语法说明： 如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符： 一列表项包含一个列表区块： 1&lt;代码写在这&gt; 一个特殊情况 在特殊情况下，项目列表很可能会不小心产生，像是下面这样的写法： 11986. What a great season. 会显示成： What a great season. 换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠： 11986\. What a great season. 会显示成：* 1986. What a great season. 引用语法说明： 引用需要在被引用的文本前加上&gt;符号。 代码：123456&gt; 这是一个有两段文字的引用,&gt; 无意义的占行文字1.&gt; 无意义的占行文字2.&gt; &gt; 无意义的占行文字3.&gt; 无意义的占行文字4. 显示效果： 这是一个有两段文字的引用,无意义的占行文字1.无意义的占行文字2. 无意义的占行文字3.无意义的占行文字4. Markdown 也允许你偷懒只在整个段落的第一行最前面加上 &gt; ： 代码：12345&gt; 这是一个有两段文字的引用,无意义的占行文字1.无意义的占行文字2.&gt; 无意义的占行文字3.无意义的占行文字4. 显示效果： 这是一个有两段文字的引用,无意义的占行文字1.无意义的占行文字2.无意义的占行文字3.无意义的占行文字4. 引用的多层嵌套 区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 &gt; ： 代码：123&gt;&gt;&gt; 请问 Markdwon 怎么用？ - 小白&gt;&gt; 自己看教程！ - 愤青&gt; 教程在哪？ - 小白 显示效果： 请问 Markdwon 怎么用？ - 小白自己看教程！ - 愤青教程在哪？ - 小白 引用其它要素 引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等： 代码：123456&gt; 1. 这是第一行列表项。&gt; 2. 这是第二行列表项。&gt; &gt; 给出一些例子代码：&gt; &gt; return shell_exec(&quot;echo $input | $markdown_script&quot;); 显示效果： 这是第一行列表项。 这是第二行列表项。 给出一些例子代码： return shell_exec(&quot;echo $input | $markdown_script&quot;); 插入图像 图片的创建方式与超链接相似，而且和超链接一样也有两种写法，行内式和参考式写法。 语法中图片Alt的意思是如果图片因为某些原因不能显示，就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样，表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的，可以省略，但建议写上。 行内式 语法说明：!图片Alt 代码：12我的博客logo： ![我的博客logo](http://localhost:4000/img/logo.svg &quot;我的博客logo&quot;) 显示效果： 我的博客logo： 参考式语法说明： 在文档要插入图片的地方写![图片Alt][标记] 在文档的最后写上[标记]:图片地址 “Title” 代码：123我的博客logo:![我的博客logo][logo][logo]:http://localhost:4000/img/logo.svg &quot;我的博客logo&quot; 显示效果： 内容目录 在段落中填写 [TOC] 以显示全文内容的目录结构。 效果参见最上方的目录 注脚语法说明： 在需要添加注脚的文字后加上脚注名字[^注脚名字],称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字。 注意：经测试注脚与注脚之间必须空一行，不然会失效。成功后会发现，即使你没有把注脚写在文末，经Markdown转换后，也会自动归类到文章的最后。 代码：1234使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。[^1]:Markdown是一种纯文本标记语言[^2]:HyperText Markup Language 超文本标记语言[^Le]:开源笔记平台，支持Markdown和笔记直接发为博文 显示效果：使用 Markdown^1可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote^Le 编辑器进行书写。 [^2]:HyperText Markup Language 超文本标记语言 LaTeX 公式$ 表示行内公式：代码：1质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。 显示效果： 质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。 ###$$ 表示整行公式： 代码：123$$\sum_&#123;i=1&#125;^n a_i=0$$$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$$$\sum^&#123;j-1&#125;_&#123;k=0&#125;&#123;\widehat&#123;\gamma&#125;_&#123;kj&#125; z_k&#125;$$ 显示效果：$$\sum_{i=1}^n a_i=0$$$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + xn^2 $$$$\sum^{j-1}{k=0}{\widehat{\gamma}_{kj} z_k}$$ 访问 MathJax 参考更多使用方法。 流程图代码：12345678910flowst=&gt;start: Start:&gt;https://www.zybuluo.comio=&gt;inputoutput: verificationop=&gt;operation: Your Operationcond=&gt;condition: Yes or No?sub=&gt;subroutine: Your Subroutinee=&gt;endst-&gt;io-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;sub-&gt;io 显示效果：flowst=&gt;start: Start:&gt;https://www.zybuluo.comio=&gt;inputoutput: verificationop=&gt;operation: Your Operationcond=&gt;condition: Yes or No?sub=&gt;subroutine: Your Subroutinee=&gt;endst-&gt;io-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;sub-&gt;io 更多语法参考：流程图语法参考 表格语法说明： 不管是哪种方式，第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。 代码： 简单方式写表格：12345学号|姓名|分数-|-|-小明|男|75小红|女|79小陆|男|92 原生方式写表格：12345|学号|姓名|分数||-|-|-||小明|男|75||小红|女|79||小陆|男|92| 为表格第二列指定方向：1234产品|价格-|-:Leanote 高级账号|60元/年Leanote 超级账号|120元/年 显示效果： 简单方式写表格： 学号 姓名 分数 小明 男 75 小红 女 79 小陆 男 92 原生方式写表格： 学号 姓名 分数 小明 男 75 小红 女 79 小陆 男 92 为表格第二列指定方向： 产品 价格 Leanote 高级账号 60元/年 Leanote 超级账号 120元/年 分隔线 你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线： 代码：12345* * *********- - ---------------------------------------- 显示效果都一样： 代码 对于程序员来说这个功能是必不可少的，插入程序代码的方式有两种，一种是利用缩进(Tab), 另一种是利用”`”符号（一般在ESC键下方）包裹代码。 语法说明： 插入行内代码，即插入一个单词或者一句代码的情况，使用code这样的形式插入。插入多行代码，可以使用缩进或者“code “,具体看示例。注意： 缩进式插入前方必须有空行 行内式代码：1C语言里的函数 `scanf()` 怎么使用？ 显示效果： C语言里的函数 scanf() 怎么使用？ 缩进式多行代码缩进 4 个空格或是 1 个制表符 一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。 代码：12345#include &lt;stdio.h&gt;int main(void)&#123; printf(&quot;Hello world\n&quot;);&#125; 显示效果： #include int main(void) { printf(“Hello world\n”); } 用六个`包裹多行代码代码：12345#include &lt;stdio.h&gt;int main(void)&#123; printf(&quot;Hello world\n&quot;);&#125; 显示效果： #include int main(void){ printf(“Hello world\n”);} 表格1234First Header | Second Header | Third Header------------ | ------------- | ------------Content Cell | Content Cell | Content CellContent Cell | Content Cell | Content Cell 显示效果： First Header Second Header Third Header Content Cell Content Cell Content Cell Content Cell Content Cell Content Cell 或者也可以让表格两边内容对齐，中间内容居中，例如： 1234First Header | Second Header | Third Header:----------- | :-----------: | -----------:Left | Center | RightLeft | Center | Right 显示效果： First Header Second Header Third Header Left Center Right Left Center Right]]></content>
-  </entry>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[hexo next 设置]]></title>
+      <url>/2017/08/19/hexo-next/</url>
+      <content type="html"><![CDATA[<h2 id="安装-NexT"><a href="#安装-NexT" class="headerlink" title="安装 NexT"></a>安装 NexT</h2><blockquote>
+<p>Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下， 然后修改下配置文件即可。具体到 NexT 来说，安装步骤如下:</p>
+</blockquote>
+<h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><blockquote>
+<p>如果你熟悉 Git， 建议你使用 克隆最新版本 的方式，之后的更新可以通过 git pull 来快速更新， 而不用再次下载压缩包替换。</p>
+</blockquote>
+<p>在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd your-hexo-site</div><div class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure></p>
+<p>或者： </p>
+<ol>
+<li>前往 <a href="https://github.com/iissnan/hexo-theme-next/releases" target="_blank" rel="external">NexT 版本 发布页面</a>。</li>
+<li><p>选择你所需要的版本，下载 Download 区域下的 Source Code (zip) 到本地。例如，下载 v0.4.0 版本：<br><img src="/images/next/next1.png" alt="NexT 版本 发布页面" title="NexT 版本 发布页面"></p>
+</li>
+<li><p>解压所下载的压缩包至站点的 themes 目录下， 并将 解压后的文件夹名称（hexo-theme-next-0.4.0）更改为 next。</p>
+</li>
+</ol>
+<h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h3><p>与所有 Hexo 主题启用的模式一样。 当 克隆/下载 完成后，打开 站点配置文件， 找到 theme 字段，并将其值更改为 next。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">启用 NexT 主题</div><div class="line">theme: next</div></pre></td></tr></table></figure></p>
+<p>到此，NexT 主题安装完成。下一步我们将验证主题是否正确启用。在切换主题之后、验证之前， 我们最好使用 hexo clean 来清除 Hexo 的缓存。</p>
+<h3 id="验证主题"><a href="#验证主题" class="headerlink" title="验证主题"></a>验证主题</h3><p>首先启动 Hexo 本地站点，并开启调试模式（即加上 –debug），整个命令是 hexo s –debug。 在服务启动的过程，注意观察命令行输出是否有任何异常信息，如果你碰到问题，这些信息将帮助他人更好的定位错误。 当命令行输出中提示出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure></p>
+<p>此时即可使用浏览器访问 <a href="http://localhost:4000，检查站点是否正确运行。" target="_blank" rel="external">http://localhost:4000，检查站点是否正确运行。</a></p>
+<blockquote>
+<p>当你看到站点的外观与下图所示类似时即说明你已成功安装 NexT 主题。这是 NexT 默认的 Scheme —— Muse</p>
+</blockquote>
+<p><img src="/images/next/next2.png" alt="NexT 主题" title="NexT 主题"></p>
+<p>现在，你已经成功安装并启用了 NexT 主题。下一步我们将要更改一些主题的设定，包括个性化以及集成第三方服务。</p>
+<h2 id="主题设定"><a href="#主题设定" class="headerlink" title="主题设定"></a>主题设定</h2><h3 id="选择-Scheme"><a href="#选择-Scheme" class="headerlink" title="选择 Scheme"></a>选择 Scheme</h3><p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 为你提供多种不同的外观。同时，几乎所有的配置都可以 在 Scheme 之间共用。目前 NexT 支持三种 Scheme，他们是：</p>
+<ul>
+<li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li>
+<li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
+<li>Pisces - 双栏 Scheme，小家碧玉似的清新</li>
+</ul>
+<p>Scheme 的切换通过更改 主题配置文件，搜索 scheme 关键字。 你会看到有三行 scheme 的配置，将你需用启用的 scheme 前面注释 # 去除即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#scheme: Muse</div><div class="line">#scheme: Mist</div><div class="line">scheme: Pisces</div></pre></td></tr></table></figure>
+<h3 id="设置-语言"><a href="#设置-语言" class="headerlink" title="设置 语言"></a>设置 语言</h3><p>编辑 站点配置文件， 将 language 设置成你所需要的语言。建议明确设置你所需要的语言，例如选用简体中文，配置如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans</div></pre></td></tr></table></figure></p>
+<p>目前 NexT 支持的语言如以下表格所示：</p>
+<table>
+<thead>
+<tr>
+<th>语言</th>
+<th>代码</th>
+<th>设定示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>English</td>
+<td>en</td>
+<td>language: en</td>
+</tr>
+<tr>
+<td>简体中文</td>
+<td>zh-Hans</td>
+<td>language: zh-Hans</td>
+</tr>
+<tr>
+<td>Français</td>
+<td>fr-FR</td>
+<td>language: fr-FR</td>
+</tr>
+<tr>
+<td>Português</td>
+<td>pt</td>
+<td>language: pt or language: pt-BR</td>
+</tr>
+<tr>
+<td>繁體中文</td>
+<td>zh-hk 或者 zh-tw</td>
+<td>language: zh-hk</td>
+</tr>
+<tr>
+<td>Русский язык</td>
+<td>ru</td>
+<td>language: ru</td>
+</tr>
+<tr>
+<td>Deutsch</td>
+<td>de</td>
+<td>language: de</td>
+</tr>
+<tr>
+<td>日本語</td>
+<td>ja</td>
+<td>language: ja</td>
+</tr>
+<tr>
+<td>Indonesian</td>
+<td>id</td>
+<td>language: id</td>
+</tr>
+<tr>
+<td>Korean</td>
+<td>ko</td>
+<td>language: ko</td>
+</tr>
+</tbody>
+</table>
+<h3 id="设置-菜单"><a href="#设置-菜单" class="headerlink" title="设置 菜单"></a>设置 菜单</h3><p>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 NexT 使用的是 Font Awesome 提供的图标， Font Awesome 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 Retina 屏幕下 图标模糊的问题。</p>
+<p>编辑 主题配置文件，修改以下内容：</p>
+<p>1、设定菜单内容，对应的字段是 menu。 菜单内容的设置格式是：item name: link。其中 item name 是一个名称，这个名称并不直接显示在页面上，她将用于匹配图标以及翻译。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">菜单示例配置</div><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  archives: /archives</div><div class="line">  #about: /about</div><div class="line">  #categories: /categories</div><div class="line">  tags: /tags</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>若你的站点运行在子目录中，请将链接前缀的 / 去掉</p>
+</blockquote>
+<p>NexT 默认的菜单项有（标注  的项表示需要手动创建这个页面）：</p>
+<table>
+<thead>
+<tr>
+<th>键值</th>
+<th>设定值</th>
+<th>显示文本（简体中文）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>home</td>
+<td>home: /</td>
+<td>主页</td>
+</tr>
+<tr>
+<td>archives</td>
+<td>archives: /archives</td>
+<td>归档页</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>categories: /categories</td>
+<td>分类页 !</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>tags: /tags</td>
+<td>标签页 !</td>
+</tr>
+<tr>
+<td>about</td>
+<td>about: /about</td>
+<td>关于页面 !</td>
+</tr>
+<tr>
+<td>commonweal</td>
+<td>commonweal: /404.html</td>
+<td>公益 404 !</td>
+</tr>
+</tbody>
+</table>
+<p>2、设置菜单项的显示文本。在第一步中设置的菜单的名称并不直接用于界面上的展示。Hexo 在生成的时候将使用 这个名称查找对应的语言翻译，并提取显示文本。这些翻译文本放置在 NexT 主题目录下的 languages/{language}.yml （{language} 为你所使用的语言）。</p>
+<p>以简体中文为例，若你需要添加一个菜单项，比如 something。那么就需要修改简体中文对应的翻译文件 languages/zh-Hans.yml，在 menu 字段下添加一项：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: 首页</div><div class="line">  archives: 归档</div><div class="line">  categories: 分类</div><div class="line">  tags: 标签</div><div class="line">  about: 关于</div><div class="line">  search: 搜索</div><div class="line">  commonweal: 公益404</div><div class="line">  something: 有料</div></pre></td></tr></table></figure></p>
+<p>3、设定菜单项的图标，对应的字段是 menu_icons。 此设定格式是 item name: icon name，其中 item name 与上一步所配置的菜单名字对应，icon name 是 Font Awesome 图标的 名字。而 enable 可用于控制是否显示图标，你可以设置成 false 来去掉图标。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">菜单图标配置示例</div><div class="line">menu_icons:</div><div class="line">  enable: true</div><div class="line">  # Icon Mapping.</div><div class="line">  home: home</div><div class="line">  about: user</div><div class="line">  categories: th</div><div class="line">  tags: tags</div><div class="line">  archives: archive</div><div class="line">  commonweal: heartbeat</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>在菜单图标开启的情况下，如果菜单项与菜单未匹配（没有设置或者无效的 Font Awesome 图标名字） 的情况下，NexT 将会使用  作为图标。</p>
+<p>请注意键值（如 home）的大小写要严格匹配</p>
+</blockquote>
+<h3 id="设置-侧栏"><a href="#设置-侧栏" class="headerlink" title="设置 侧栏"></a>设置 侧栏</h3><p>默认情况下，侧栏仅在文章页面（拥有目录列表）时才显示，并放置于右侧位置。 可以通过修改 主题配置文件 中的 sidebar 字段来控制侧栏的行为。侧栏的设置包括两个部分，其一是侧栏的位置， 其二是侧栏显示的时机。</p>
+<p>1、设置侧栏的位置，修改 sidebar.position 的值，支持的选项有：</p>
+<ul>
+<li>left - 靠左放置</li>
+<li>right - 靠右放置</li>
+</ul>
+<blockquote>
+<p>目前仅 Pisces Scheme 支持 position 配置。影响版本5.0.0及更低版本。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sidebar:</div><div class="line">  position: left</div></pre></td></tr></table></figure>
+<p>2、设置侧栏显示的时机，修改 sidebar.display 的值，支持的选项有：</p>
+<ul>
+<li>post - 默认行为，在文章页面（拥有目录列表）时显示</li>
+<li>always - 在所有页面中都显示</li>
+<li>hide - 在所有页面中都隐藏（可以手动展开）</li>
+<li>remove - 完全移除</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sidebar:</div><div class="line">  display: post</div></pre></td></tr></table></figure>
+<blockquote>
+<p>已知侧栏在 use motion: false 的情况下不会展示。 影响版本5.0.0及更低版本。</p>
+</blockquote>
+<h3 id="设置-头像"><a href="#设置-头像" class="headerlink" title="设置 头像"></a>设置 头像</h3><p>编辑 主题配置文件， 修改字段 avatar， 值设置成头像的链接地址。其中，头像的链接地址可以是：</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>完整的互联网 URI</td>
+<td><a href="http://example.com/avatar.png" target="_blank" rel="external">http://example.com/avatar.png</a></td>
+</tr>
+<tr>
+<td>站点内的地址</td>
+<td>将头像放置主题目录下的 source/uploads/ （新建 uploads 目录若不存在） <br>配置为：avatar: /uploads/avatar.png <br>或者 放置在 source/images/ 目录下 <br>配置为：avatar: /images/avatar.png</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">头像设置示例</div><div class="line">avatar: http://example.com/avatar.png</div></pre></td></tr></table></figure>
+<h3 id="设置-作者昵称"><a href="#设置-作者昵称" class="headerlink" title="设置 作者昵称"></a>设置 作者昵称</h3><p>编辑 站点配置文件， 设置 author 为你的昵称。</p>
+<h3 id="站点描述"><a href="#站点描述" class="headerlink" title="站点描述"></a>站点描述</h3><p>编辑 站点配置文件， 设置 description 字段为你的站点描述。站点描述可以是你喜欢的一句签名:)</p>
+<h2 id="集成常用的第三方服务"><a href="#集成常用的第三方服务" class="headerlink" title="集成常用的第三方服务"></a>集成常用的第三方服务</h2><h3 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h3><blockquote>
+<p>注意： baidu_analytics 不是你的百度 id 或者 百度统计 id</p>
+</blockquote>
+<p>1、登录 <a href="http://tongji.baidu.com/" target="_blank" rel="external">百度统计</a>， 定位到站点的代码获取页面<br>2、复制 hm.js? 后面那串统计脚本 id，如：<br><img src="/images/next/next3.png" alt="百度统计" title="百度统计"></p>
+<p>3、编辑 主题配置文件， 修改字段 baidu_analytics 字段，值设置成你的百度统计脚本 id。</p>
+<h3 id="阅读次数统计（LeanCloud）-由-Doublemine-贡献"><a href="#阅读次数统计（LeanCloud）-由-Doublemine-贡献" class="headerlink" title="阅读次数统计（LeanCloud） 由 Doublemine 贡献"></a>阅读次数统计（LeanCloud） 由 Doublemine 贡献</h3><p>请查看 <a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="external">为NexT主题添加文章阅读量统计功能</a></p>
+<h2 id="其他设置"><a href="#其他设置" class="headerlink" title="其他设置"></a>其他设置</h2><h3 id="添加动态线条背景"><a href="#添加动态线条背景" class="headerlink" title="添加动态线条背景"></a>添加动态线条背景</h3><p>1、 修改_layout.swig<br>打开  next/layout/_layout.swig<br>在 &lt; /body&gt;之前添加代码(注意不要放在&lt; /head&gt;的后面)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% if theme.canvas_nest %&#125;</div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&#123;% endif %&#125;</div></pre></td></tr></table></figure></p>
+<p>2、修改配置文件</p>
+<p>打开 /next/_config.yml,在里面添加如下代码：(可以放在最后面)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># --------------------------------------------------------------</div><div class="line"># background settings</div><div class="line"># --------------------------------------------------------------</div><div class="line"># add canvas-nest effect</div><div class="line"># see detail from https://github.com/hustcc/canvas-nest.js</div><div class="line">canvas_nest: true</div></pre></td></tr></table></figure></p>
+<p>到此就结束了，运行 hexo clean，然后运行 hexo g,然后运行 hexo s，最后打开浏览器在浏览器的地址栏输入 localhost:4000 就能看到效果了\（￣︶￣）/</p>
+<p>3、如果你感觉默认的线条太多的话</p>
+<p>可以这么设置：</p>
+<p>在上一步修改  _layout.swig中，把刚才的这些代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;% if theme.canvas_nest %&#125;</div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&#123;% endif %&#125;</div><div class="line">改为</div><div class="line"></div><div class="line">&#123;% if theme.canvas_nest %&#125;</div><div class="line">&lt;script type=&quot;text/javascript&quot;</div><div class="line">color=&quot;0,0,255&quot; opacity=&apos;0.7&apos; zIndex=&quot;-2&quot; count=&quot;99&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&#123;% endif %&#125;</div></pre></td></tr></table></figure></p>
+<p>4、配置项说明</p>
+<ul>
+<li>color ：线条颜色, 默认: ‘0,0,0’；三个数字分别为(R,G,B)</li>
+<li>opacity: 线条透明度（0~1）, 默认: 0.5</li>
+<li>count: 线条的总数量, 默认: 150</li>
+<li>zIndex: 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1</li>
+</ul>
+<h3 id="让首页不显示全文"><a href="#让首页不显示全文" class="headerlink" title="让首页不显示全文"></a>让首页不显示全文</h3><h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><blockquote>
+<p>要解决这个问题有两个方法：一是修改 _config.yml 文件设置，而是直接在你的 md 中加一句代码即可。</p>
+</blockquote>
+<p>第一种方法</p>
+<p>用文本编辑器打开 themes/next 目录下的 _config.yml 文件，找到这段代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># Automatically Excerpt. Not recommend.</div><div class="line"># Please use &lt;!-- more --&gt; in the post to control excerpt accurately.</div><div class="line">auto_excerpt:</div><div class="line">  enable: false</div><div class="line">  length: 150</div></pre></td></tr></table></figure></p>
+<p>把 enable 的 false 改成 true 就行了，然后 length 是设定文章预览的文本长度。</p>
+<p>修改后重启 hexo 就ok了。</p>
+<p>第二种方法</p>
+<p>在你写 md 文章的时候，可以在内容中加上 <a id="more"></a>，这样首页和列表页展示的文章内容就是 <!--more--> 之前的文字，而之后的就不会显示了。</p>
+<h4 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h4><p>上面两种方式展示出来的效果是不一样的。</p>
+<p>第一种修改 _config.yml 文件的效果是会格式化你文章的样式，直接把文字挤在一起显示，最后会有 …<br><img src="/images/next/next4.png" alt="第一种" title="第一种"></p>
+<p>而第二种加上 <!--more--> 展示出来的就是你原本文章的样式，最后不会有…</p>
+<p><img src="/images/next/next5.png" alt="第二种" title="第二种"></p>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>Hexo提供的Local Search,原理是通过hexo-generator-search插件在本地生成一个search.xml文件，搜索的时候从这个文件中根据关键字检索出相应的链接。</p>
+<h4 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h4><p>1、安装 hexo-generator-search</p>
+<p>在站点的根目录下执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-generator-search --save</div></pre></td></tr></table></figure></p>
+<p>2、安装 hexo-generator-searchdb</p>
+<p>在站点的根目录下执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-generator-searchdb --save</div></pre></td></tr></table></figure></p>
+<p>3、启用搜索</p>
+<p>编辑 站点配置文件，新增以下内容到任意位置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">search:</div><div class="line">  path: search.xml</div><div class="line">  field: post</div><div class="line">  format: html</div><div class="line">  limit: 10000</div></pre></td></tr></table></figure></p>
+<h2 id="踩过的坑"><a href="#踩过的坑" class="headerlink" title="踩过的坑"></a>踩过的坑</h2><h3 id="ERROR-Deployer-not-found-github"><a href="#ERROR-Deployer-not-found-github" class="headerlink" title="ERROR Deployer not found: github"></a>ERROR Deployer not found: github</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div><div class="line">ERROR Deployer not found: github</div></pre></td></tr></table></figure>
+<p>解决办法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">第一：安装</div><div class="line">npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">第二：检查配置文件type是否为git</div><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  # 类型</div><div class="line">  type: git</div><div class="line">  # 仓库</div><div class="line">  repo: git@github.com:Sunny-JJ/Sunny-JJ.github.io.git</div><div class="line">  # 分支</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>/2017/08/17/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Javascript 菜鸟教程]]></title>
+      <url>/2017/08/15/Javascript/</url>
+      <content type="html"><![CDATA[<h2 id="JavaScript-基础"><a href="#JavaScript-基础" class="headerlink" title="JavaScript 基础"></a>JavaScript 基础</h2><h3 id="JavaScript-教程"><a href="#JavaScript-教程" class="headerlink" title="JavaScript 教程"></a>JavaScript 教程</h3><h3 id="JavaScript-简介"><a href="#JavaScript-简介" class="headerlink" title="JavaScript 简介"></a>JavaScript 简介</h3><h3 id="JavaScript-用法"><a href="#JavaScript-用法" class="headerlink" title="JavaScript 用法"></a>JavaScript 用法</h3><h3 id="JavaScript-输出"><a href="#JavaScript-输出" class="headerlink" title="JavaScript 输出"></a>JavaScript 输出</h3><h3 id="JavaScript-语法"><a href="#JavaScript-语法" class="headerlink" title="JavaScript 语法"></a>JavaScript 语法</h3><hr>
+<h3 id="JavaScript-语句"><a href="#JavaScript-语句" class="headerlink" title="JavaScript 语句"></a>JavaScript 语句</h3><blockquote>
+<p>JavaScript 语句向浏览器发出的命令。语句的作用是告诉浏览器该做什么。</p>
+</blockquote>
+<p><strong>1.JavaScript 语句</strong> </p>
+<p>下面的 JavaScript 语句向 id=”demo” 的 HTML 元素输出文本 “你好 Dolly” ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(&quot;demo&quot;).innerHTML = &quot;你好 Dolly&quot;;</div></pre></td></tr></table></figure>
+<p>分号用于分隔 JavaScript 语句。<br>通常我们在每条可执行的语句结尾添加分号。<br>使用分号的另一用处是在一行中编写多条语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">a = 5;</div><div class="line">b = 6;</div><div class="line">c = a + b;</div><div class="line">以上实例也可以这么写:</div><div class="line">a = 5; b = 6; c = a + b;</div></pre></td></tr></table></figure>
+<p><strong>3.JavaScript 代码</strong></p>
+<p>JavaScript 代码是 JavaScript 语句的序列。<br>浏览器按照编写顺序依次执行每条语句。</p>
+<p>本例向网页输出一个标题和两个段落：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">document.getElementById(&quot;demo&quot;).innerHTML=&quot;你好 Dolly&quot;;</div><div class="line">document.getElementById(&quot;myDIV&quot;).innerHTML=&quot;你最近怎么样?&quot;;</div></pre></td></tr></table></figure>
+<p><strong>4.JavaScript 代码块</strong></p>
+<p>JavaScript 可以分批地组合起来。<br>代码块以左花括号开始，以右花括号结束。<br>代码块的作用是一并地执行语句序列。</p>
+<p>本例向网页输出一个标题和两个段落：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function myFunction()</div><div class="line">&#123;</div><div class="line">    document.getElementById(&quot;demo&quot;).innerHTML=&quot;你好Dolly&quot;;</div><div class="line">    document.getElementById(&quot;myDIV&quot;).innerHTML=&quot;你最近怎么样?&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>5.JavaScript 语句标识符</strong><br>JavaScript 语句通常以一个 语句标识符 为开始，并执行该语句。<br>语句标识符是保留关键字不能作为变量名使用。</p>
+<p>下表列出了 JavaScript 语句标识符 (关键字) ：</p>
+<table>
+<thead>
+<tr>
+<th>语句</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>break</td>
+<td>用于跳出循环。</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>语句块，在 try 语句块执行出错时执行 catch 语句块。</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>跳过循环中的一个迭代。</td>
+</tr>
+<tr>
+<td>do … while</td>
+<td>执行一个语句块，在条件语句为 true 时继续执行该语句块。</td>
+</tr>
+<tr>
+<td>for</td>
+<td>在条件语句为 true 时，可以将代码块执行指定的次数。 </td>
+</tr>
+<tr>
+<td>for … in</td>
+<td>用于遍历数组或者对象的属性（对数组或者对象的属性进行循环操作）。</td>
+</tr>
+<tr>
+<td>function</td>
+<td>定义一个函数</td>
+</tr>
+<tr>
+<td>if … else</td>
+<td>用于基于不同的条件来执行不同的动作。</td>
+</tr>
+<tr>
+<td>return</td>
+<td>退出函数</td>
+</tr>
+<tr>
+<td>switch</td>
+<td>用于基于不同的条件来执行不同的动作。</td>
+</tr>
+<tr>
+<td>throw</td>
+<td>抛出（生成）错误 。 </td>
+</tr>
+<tr>
+<td>try</td>
+<td>实现错误处理，与 catch 一同使用。 </td>
+</tr>
+<tr>
+<td>var</td>
+<td>声明一个变量。</td>
+</tr>
+<tr>
+<td>while</td>
+<td>当条件语句为 true 时，执行语句块。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>6.空格</strong><br>JavaScript 会忽略多余的空格。您可以向脚本添加空格，来提高其可读性。下面的两行代码是等效的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var person=&quot;Hege&quot;;</div><div class="line">var person = &quot;Hege&quot;;</div></pre></td></tr></table></figure></p>
+<p>对代码行进行折行<br>您可以在文本字符串中使用反斜杠对代码行进行换行。下面的例子会正确地显示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">document.write(&quot;你好 \</div><div class="line">世界!&quot;);</div><div class="line">不过，您不能像这样折行：</div><div class="line">document.write \ </div><div class="line">(&quot;你好世界!&quot;);</div></pre></td></tr></table></figure></p>
+<p>您知道吗？<br>提示：JavaScript 是脚本语言。浏览器会在读取代码时，逐行地执行脚本代码。而对于传统编程来说，会在执行前对所有代码进行编译。</p>
+<hr>
+<h3 id="JavaScript-注释"><a href="#JavaScript-注释" class="headerlink" title="JavaScript 注释"></a>JavaScript 注释</h3><blockquote>
+<p>JavaScript 注释可用于提高代码的可读性。</p>
+</blockquote>
+<p><strong>1.JavaScript 注释</strong></p>
+<p>JavaScript 不会执行注释。<br>我们可以添加注释来对 JavaScript 进行解释，或者提高代码的可读性。<br>单行注释以 // 开头。</p>
+<p>本例用单行注释来解释代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">// 输出标题：</div><div class="line">document.getElementById(&quot;myH1&quot;).innerHTML=&quot;欢迎来到我的主页&quot;;</div><div class="line">// 输出段落：</div><div class="line">document.getElementById(&quot;myP&quot;).innerHTML=&quot;这是我的第一个段落。&quot;;</div></pre></td></tr></table></figure></p>
+<p><strong>2.JavaScript 多行注释</strong></p>
+<p>多行注释以 /<em> 开始，以 </em>/ 结尾。<br>下面的例子使用多行注释来解释代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">下面的这些代码会输出</div><div class="line">一个标题和一个段落</div><div class="line">并将代表主页的开始</div><div class="line">*/</div><div class="line">document.getElementById(&quot;myH1&quot;).innerHTML=&quot;欢迎来到我的主页&quot;;</div><div class="line">document.getElementById(&quot;myP&quot;).innerHTML=&quot;这是我的第一个段落。&quot;;</div></pre></td></tr></table></figure></p>
+<p><strong>3.使用注释来阻止执行</strong></p>
+<p>在下面的例子中，注释用于阻止其中一条代码行的执行（可用于调试）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//document.getElementById(&quot;myH1&quot;).innerHTML=&quot;欢迎来到我的主页&quot;;</div><div class="line">document.getElementById(&quot;myP&quot;).innerHTML=&quot;这是我的第一个段落。&quot;;</div><div class="line"></div><div class="line">/*</div><div class="line">document.getElementById(&quot;myH1&quot;).innerHTML=&quot;欢迎来到我的主页&quot;;</div><div class="line">document.getElementById(&quot;myP&quot;).innerHTML=&quot;这是我的第一个段落。&quot;;</div><div class="line">*/</div></pre></td></tr></table></figure>
+<p><strong>4.在行末使用注释</strong></p>
+<p>在下面的例子中，我们把注释放到代码行的结尾处：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var x=5;    // 声明 x 并把 5 赋值给它</div><div class="line">var y=x+2;  // 声明 y 并把 x+2 赋值给它</div></pre></td></tr></table></figure></p>
+<p><img src="/images/javascript/tip1.jpg" alt="提示图标" title="提示图标"><strong>养成一个好的习惯就是写注释</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">养成一个好的习惯就是写注释。</div><div class="line">方便你二次阅读，维护你的代码。</div><div class="line">如果后面项目转手，也方便别人来理解你的代码和维护你的代码。</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="JavaScript-变量"><a href="#JavaScript-变量" class="headerlink" title="JavaScript 变量"></a>JavaScript 变量</h3><blockquote>
+<p>变量是用于存储信息的”容器”。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var x=5;</div><div class="line">var y=6;</div><div class="line">var z=x+y;</div></pre></td></tr></table></figure>
+<p><img src="/images/javascript/tip1.jpg" alt="提示图标" title="提示图标"> <strong>您可以把变量看做存储数据的容器。</strong></p>
+<ul>
+<li>变量必须以字母开头</li>
+<li>变量也能以 $ 和 _ 符号开头（不过我们不推荐这么做）</li>
+<li>变量名称对大小写敏感（y 和 Y 是不同的变量）</li>
+</ul>
+<p><img src="/images/javascript/tip1.jpg" alt="提示图标" title="提示图标"> <strong>JavaScript 语句和 JavaScript 变量都对大小写敏感。</strong></p>
+<blockquote>
+<p>当您向变量分配文本值时，应该用双引号或单引号包围这个值。<br>当您向变量赋的值是数值时，不要使用引号。如果您用引号包围数值，该值会被作为文本来处理。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var pi=3.14;</div><div class="line">var person=&quot;John Doe&quot;;</div><div class="line">var answer=&apos;Yes I am!&apos;;</div></pre></td></tr></table></figure>
+<p><strong>1.声明（创建） JavaScript 变量</strong></p>
+<blockquote>
+<p>在 JavaScript 中创建变量通常称为”声明”变量。</p>
+</blockquote>
+<p>我们使用 var 关键词来声明变量：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var carname;</div></pre></td></tr></table></figure>
+<p>变量声明之后，该变量是空的（它没有值）。<br>如需向变量赋值，请使用等号：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">carname=&quot;Volvo&quot;;</div></pre></td></tr></table></figure>
+<p>不过，您也可以在声明变量时对其赋值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var carname=&quot;Volvo&quot;;</div></pre></td></tr></table></figure>
+<p>在下面的例子中，我们创建了名为 carname 的变量，并向其赋值 “Volvo”，然后把它放入 id=”demo” 的 HTML 段落中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</div><div class="line">var carname=&quot;Volvo&quot;;</div><div class="line">document.getElementById(&quot;demo&quot;).innerHTML=carname;</div></pre></td></tr></table></figure>
+<p><img src="/images/javascript/tip1.jpg" alt="提示图标" title="提示图标"> 一个好的编程习惯是，在代码开始处，统一对需要的变量进行声明。</p>
+<hr>
+<h3 id="一条语句，多个变量"><a href="#一条语句，多个变量" class="headerlink" title="一条语句，多个变量"></a>一条语句，多个变量</h3><p>您可以在一条语句中声明很多变量。该语句以 var 开头，并使用逗号分隔变量即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var lastname=&quot;Doe&quot;, age=30, job=&quot;carpenter&quot;;</div></pre></td></tr></table></figure>
+<p>声明也可横跨多行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var lastname=&quot;Doe&quot;,</div><div class="line">age=30,</div><div class="line">job=&quot;carpenter&quot;;</div></pre></td></tr></table></figure>
+<p><strong>Value = undefined</strong><br>在计算机程序中，经常会声明无值的变量。未使用值来声明的变量，其值实际上是 undefined。<br>在执行过以下语句后，变量 carname 的值将是 undefined：<br>var carname;</p>
+<p><strong>重新声明 JavaScript 变量</strong></p>
+<p>如果重新声明 JavaScript 变量，该变量的值不会丢失：<br>在以下两条语句执行后，变量 carname 的值依然是 “Volvo”：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var carname=&quot;Volvo&quot;; </div><div class="line">var carname;</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="JavaScript-数据类型"><a href="#JavaScript-数据类型" class="headerlink" title="JavaScript 数据类型"></a>JavaScript 数据类型</h3><blockquote>
+<p>字符串（String）、数字(Number)、布尔(Boolean)、数组(Array)、对象(Object)、空（Null）、未定义（Undefined）。</p>
+</blockquote>
+<h4 id="JavaScript-拥有动态类型"><a href="#JavaScript-拥有动态类型" class="headerlink" title="JavaScript 拥有动态类型"></a>JavaScript 拥有动态类型</h4><p>JavaScript 拥有动态类型。这意味着相同的变量可用作不同的类型：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var x;               // x 为 undefined</div><div class="line">var x = 5;           // 现在 x 为数字</div><div class="line">var x = &quot;John&quot;;      // 现在 x 为字符串</div></pre></td></tr></table></figure></p>
+<h4 id="JavaScript-字符串"><a href="#JavaScript-字符串" class="headerlink" title="JavaScript 字符串"></a>JavaScript 字符串</h4><p>字符串是存储字符（比如 “Bill Gates”）的变量。<br>字符串可以是引号中的任意文本。您可以使用单引号或双引号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var carname=&quot;Volvo XC60&quot;;</div><div class="line">var carname=&apos;Volvo XC60&apos;;</div></pre></td></tr></table></figure></p>
+<p>您可以在字符串中使用引号，只要不匹配包围字符串的引号即可：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var answer=&quot;It&apos;s alright&quot;;</div><div class="line">var answer=&quot;He is called &apos;Johnny&apos;&quot;;</div><div class="line">var answer=&apos;He is called &quot;Johnny&quot;&apos;;</div></pre></td></tr></table></figure></p>
+<h4 id="JavaScript-数字"><a href="#JavaScript-数字" class="headerlink" title="JavaScript 数字"></a>JavaScript 数字</h4><p>JavaScript 只有一种数字类型。数字可以带小数点，也可以不带：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var x1=34.00;      //使用小数点来写</div><div class="line">var x2=34;         //不使用小数点来写</div></pre></td></tr></table></figure></p>
+<p>极大或极小的数字可以通过科学（指数）计数法来书写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var y=123e5;      // 12300000</div><div class="line">var z=123e-5;     // 0.00123</div></pre></td></tr></table></figure></p>
+<h4 id="JavaScript-布尔"><a href="#JavaScript-布尔" class="headerlink" title="JavaScript 布尔"></a>JavaScript 布尔</h4><p>布尔（逻辑）只能有两个值：true 或 false。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var x=true;</div><div class="line">var y=false;</div></pre></td></tr></table></figure></p>
+<h4 id="JavaScript-数组"><a href="#JavaScript-数组" class="headerlink" title="JavaScript 数组"></a>JavaScript 数组</h4><p>下面的代码创建名为 cars 的数组：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var cars=new Array();</div><div class="line">cars[0]=&quot;Saab&quot;;</div><div class="line">cars[1]=&quot;Volvo&quot;;</div><div class="line">cars[2]=&quot;BMW&quot;;</div><div class="line">或者 (condensed array):</div><div class="line">var cars=new Array(&quot;Saab&quot;,&quot;Volvo&quot;,&quot;BMW&quot;);</div><div class="line">或者 (literal array):</div></pre></td></tr></table></figure></p>
+<p>实例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var cars=[&quot;Saab&quot;,&quot;Volvo&quot;,&quot;BMW&quot;];</div></pre></td></tr></table></figure></p>
+<p>数组下标是基于零的，所以第一个项目是 [0]，第二个是 [1]，以此类推。</p>
+<p>数组声明有四种方式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var arr1 = new Array(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;);    //这是一个预定义的数组，在创建时初始化</div><div class="line">var arr2 = [&apos;a&apos;, &apos;b&apos;,&apos; &apos;c&apos; ];       //同样是在创建时初始化，但是这种创建更为边界直观</div><div class="line">var arr3 = new Array( );   var arr4 = [ ];     //这两种是创建空的数组</div></pre></td></tr></table></figure></p>
+<p>在数组操作中，最值得注意的是下标的使用，容易出错</p>
+<h4 id="JavaScript-对象"><a href="#JavaScript-对象" class="headerlink" title="JavaScript 对象"></a>JavaScript 对象</h4><p>对象由花括号分隔。在括号内部，对象的属性以名称和值对的形式 (name : value) 来定义。属性由逗号分隔：<br>对象的创建，一般推荐使用这种方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var person = &#123;firstname:&quot;John&quot;, lastname:&quot;Doe&quot;, id:5566&#125;;</div><div class="line">var perple = &#123;name : &apos;Tom&apos;, age : 21 , eat : function()&#123;  &#125;    &#125;</div></pre></td></tr></table></figure></p>
+<p>上面第一个例子中的对象 (person) 有三个属性：firstname、lastname 以及 id。<br>空格和折行无关紧要。声明可横跨多行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var person=&#123;</div><div class="line">  firstname : &quot;John&quot;,</div><div class="line">  lastname  : &quot;Doe&quot;,</div><div class="line">  id        :  5566</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>也可先创建对象再追加属性和方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var people = new Ojbect();</div><div class="line">people.name = &quot;Tom&quot;;   </div><div class="line">people.age = 21;  </div><div class="line">people.eat = function()&#123;  &#125;</div></pre></td></tr></table></figure></p>
+<p>对象属性有两种寻址方式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">name=person.lastname;</div><div class="line">name=person[&quot;lastname&quot;];</div></pre></td></tr></table></figure></p>
+<h4 id="Undefined-和-Null"><a href="#Undefined-和-Null" class="headerlink" title="Undefined 和 Null"></a>Undefined 和 Null</h4><p>Undefined 这个值表示变量不含有值。<br>可以通过将变量的值设置为 null 来清空变量。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cars=null;</div><div class="line">person=null;</div></pre></td></tr></table></figure></p>
+<h4 id="声明变量类型"><a href="#声明变量类型" class="headerlink" title="声明变量类型"></a>声明变量类型</h4><p>当您声明新变量时，可以使用关键词 “new” 来声明其类型：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var carname=new String;</div><div class="line">var x=      new Number;</div><div class="line">var y=      new Boolean;</div><div class="line">var cars=   new Array;</div><div class="line">var person= new Object;</div></pre></td></tr></table></figure></p>
+<p><img src="/images/javascript/tip1.jpg" alt="提示图标" title="提示图标">lamp  JavaScript 变量均为对象。当您声明一个变量时，就创建了一个新的对象。</p>
+<hr>
+<h3 id="JavaScript-对象-1"><a href="#JavaScript-对象-1" class="headerlink" title="JavaScript 对象"></a>JavaScript 对象</h3><blockquote>
+<p>JavaScript 对象是拥有属性和方法的数据。</p>
+</blockquote>
+<h4 id="真实生活中的对象，属性和方法"><a href="#真实生活中的对象，属性和方法" class="headerlink" title="真实生活中的对象，属性和方法"></a>真实生活中的对象，属性和方法</h4><p>真实生活中，一辆汽车是一个对象。<br>对象有它的属性，如重量和颜色等，方法有启动停止等:</p>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th>属性</th>
+<th>方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/images/javascript/car.gif" alt="汽车对象" title="汽车"></td>
+<td>car.name = Fiat<br>car.model = 500<br>car.weight = 850kg<br>car.color = white</td>
+<td>car.start()<br>car.drive()<br>car.brake()<br>car.stop</td>
+</tr>
+</tbody>
+</table>
+<p>所有汽车都有这些属性，但是每款车的属性都不尽相同。<br>所有汽车都拥有这些方法，但是它们被执行的时间都不尽相同。</p>
+<h4 id="JavaScript-对象-2"><a href="#JavaScript-对象-2" class="headerlink" title="JavaScript 对象"></a>JavaScript 对象</h4><p>在 JavaScript中，几乎所有的事物都是对象。</p>
+<p><img src="/images/javascript/tip1.jpg" alt="提示图标" title="提示图标">在 JavaScript 中，对象是非常重要的，当你理解了对象，就可以了解 JavaScript。</p>
+<p>以下代码为变量 car 设置值为 “Fiat” :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var car = &quot;Fiat&quot;;</div></pre></td></tr></table></figure></p>
+<p>对象也是一个变量，但对象可以包含多个值（多个变量）。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var car = &#123;type:&quot;Fiat&quot;, model:500, color:&quot;white&quot;&#125;;</div></pre></td></tr></table></figure></p>
+<p>在以上实例中，3 个值 (“Fiat”, 500, “white”) 赋予变量 car。<br>在以上实例中，3 个变量 (type, model, color) 赋予变量 car。</p>
+<p><img src="/images/javascript/tip1.jpg" alt="提示图标" title="提示图标"> JavaScript 对象是变量的容器。</p>
+<h4 id="对象定义"><a href="#对象定义" class="headerlink" title="对象定义"></a>对象定义</h4><p>你可以使用字符来定义和创建 JavaScript 对象:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var person = &#123;firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;&#125;;</div></pre></td></tr></table></figure></p>
+<p>定义 JavaScript 对象可以跨越多行，空格跟换行不是必须的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var person = &#123;</div><div class="line">    firstName:&quot;John&quot;,</div><div class="line">    lastName:&quot;Doe&quot;,</div><div class="line">    age:50,</div><div class="line">    eyeColor:&quot;blue&quot;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<h4 id="对象属性"><a href="#对象属性" class="headerlink" title="对象属性"></a>对象属性</h4><p>可以说 “JavaScript 对象是变量的容器”。<br>但是，我们通常认为 “JavaScript 对象是键值对的容器”。<br>键值对通常写法为 name : value (键与值以冒号分割)。<br>键值对在 JavaScript 对象通常称为 对象属性。</p>
+<p><img src="/images/javascript/tip1.jpg" alt="提示图标" title="提示图标"> JavaScript 对象是属性变量的容器。</p>
+<p>对象键值对的写法类似于：<br>1.PHP 中的关联数组<br>2.Python 中的字典<br>3.C 语言中的哈希表<br>4.Java 中的哈希映射<br>5.Ruby 和 Perl 中的哈希表</p>
+<h4 id="访问对象属性"><a href="#访问对象属性" class="headerlink" title="访问对象属性"></a>访问对象属性</h4><p>你可以通过两种方式访问对象属性:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">法一：</div><div class="line">person.lastName;</div><div class="line">法二：</div><div class="line">person[&quot;lastName&quot;];</div></pre></td></tr></table></figure></p>
+<h4 id="对象方法"><a href="#对象方法" class="headerlink" title="对象方法"></a>对象方法</h4><p>对象的方法定义了一个函数，并作为对象的属性存储。<br>对象方法通过添加 () 调用 (作为一个函数)。<br>该实例访问了 person 对象的 fullName() 方法:name = person.fullName();<br>1.创建和使用对象方法。<br>2.对象方法作为一个函数定义存储在对象属性中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var person = &#123;</div><div class="line">    firstName: &quot;John&quot;,</div><div class="line">    lastName : &quot;Doe&quot;,</div><div class="line">    id : 5566,</div><div class="line">    fullName : function() </div><div class="line">    &#123;</div><div class="line">      return this.firstName + &quot; &quot; + this.lastName;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line">document.getElementById(&quot;demo&quot;).innerHTML = person.fullName();</div><div class="line"></div><div class="line">结果：</div><div class="line">John Doe</div></pre></td></tr></table></figure></p>
+<p>如果你要访问 person 对象的 fullName 属性，它将作为一个定义函数的字符串返回：name = person.fullName;<br>1.创建和使用对象方法。<br>2.对象方法是一个函数定义,并作为一个属性值存储。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var person = &#123;</div><div class="line">    firstName: &quot;John&quot;,</div><div class="line">    lastName : &quot;Doe&quot;,</div><div class="line">    id : 5566,</div><div class="line">    fullName : function() </div><div class="line">    &#123;</div><div class="line">      return this.firstName + &quot; &quot; + this.lastName;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line">document.getElementById(&quot;demo1&quot;).innerHTML = &quot;不加括号输出函数表达式：&quot;  + person.fullName;</div><div class="line">document.getElementById(&quot;demo2&quot;).innerHTML = &quot;加括号输出函数执行结果：&quot;  +  person.fullName();</div><div class="line"></div><div class="line">结果：</div><div class="line">不加括号输出函数表达式：function () &#123; return this.firstName + &quot; &quot; + this.lastName; &#125;</div><div class="line">加括号输出函数执行结果：John Doe</div></pre></td></tr></table></figure></p>
+<p><img src="/images/javascript/tip1.jpg" alt="提示图标" title="提示图标">  JavaScript 对象是属性和方法的容器。</p>
+<h4 id="访问对象方法"><a href="#访问对象方法" class="headerlink" title="访问对象方法"></a>访问对象方法</h4><p>你可以使用以下语法创建对象方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">methodName : function() &#123; code lines &#125;</div></pre></td></tr></table></figure></p>
+<p>你可以使用以下语法访问对象方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">objectName.methodName()</div></pre></td></tr></table></figure></p>
+<p>通常 fullName() 是作为 person 对象的一个方法， fullName 是作为一个属性。<br>有多种方式可以创建，使用和修改 JavaScript 对象。<br>同样也有多种方式用来创建，使用和修改属性和方法。</p>
+<h4 id="更多实例"><a href="#更多实例" class="headerlink" title="更多实例"></a>更多实例</h4><p>创建 JavaScript 对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">法一：一行</div><div class="line">var person = &#123;firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;&#125;;</div><div class="line">法二：多行</div><div class="line">var person = &#123;</div><div class="line">    firstName : &quot;John&quot;,</div><div class="line">    lastName  : &quot;Doe&quot;,</div><div class="line">    age       : 50,</div><div class="line">    eyeColor  : &quot;blue&quot;</div><div class="line">&#125;;</div><div class="line">document.getElementById(&quot;demo&quot;).innerHTML = person.firstName + &quot; 现在 &quot; + person.age + &quot; 岁。&quot;;</div><div class="line"></div><div class="line">结果：</div><div class="line">John 现在 50 岁.</div></pre></td></tr></table></figure></p>
+<p>访问对象属性<br>有两种方式可以访问对象属性：.property 或 [“property”].<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var person = &#123;</div><div class="line">    firstName : &quot;John&quot;,</div><div class="line">    lastName : &quot;Doe&quot;,</div><div class="line">    id : 5566</div><div class="line">&#125;;</div><div class="line"></div><div class="line">法一：.property</div><div class="line">document.getElementById(&quot;demo&quot;).innerHTML = person.firstName + &quot; &quot; + person.lastName;</div><div class="line">法二：[&quot;property&quot;]</div><div class="line">document.getElementById(&quot;demo&quot;).innerHTML = person[&quot;firstName&quot;] + &quot; &quot; + person[&quot;lastName&quot;];</div><div class="line"></div><div class="line">结果：</div><div class="line">John Doe</div></pre></td></tr></table></figure></p>
+<p>函数属性作为一个方法访问<br>创建和使用对象方法。<br>对象方法作为一个函数定义存储在对象属性中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var person = &#123;</div><div class="line">  firstName: &quot;John&quot;,</div><div class="line">  lastName : &quot;Doe&quot;,</div><div class="line">  id : 5566,</div><div class="line">  fullName : function() </div><div class="line">  &#123;</div><div class="line">    return this.firstName + &quot; &quot; + this.lastName;</div><div class="line">  &#125;</div><div class="line">&#125;;</div><div class="line">document.getElementById(&quot;demo&quot;).innerHTML = person.fullName();</div><div class="line"></div><div class="line">结果：</div><div class="line"></div><div class="line"></div><div class="line">John Doe</div></pre></td></tr></table></figure></p>
+<p>函数属性作为一个属性访问<br>创建和使用对象方法。<br>对象方法是一个函数定义,并作为一个属性值存储。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var person = &#123;</div><div class="line">    firstName: &quot;John&quot;,</div><div class="line">    lastName : &quot;Doe&quot;,</div><div class="line">    id : 5566,</div><div class="line">    fullName : function() </div><div class="line">  &#123;</div><div class="line">       return this.firstName + &quot; &quot; + this.lastName;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line">document.getElementById(&quot;demo1&quot;).innerHTML = &quot;不加括号输出函数表达式：&quot;  + person.fullName;</div><div class="line">document.getElementById(&quot;demo2&quot;).innerHTML = &quot;加括号输出函数执行结果：&quot;  +  person.fullName();</div><div class="line"></div><div class="line">结果：</div><div class="line">不加括号输出函数表达式：function () &#123; return this.firstName + &quot; &quot; + this.lastName; &#125;</div><div class="line">加括号输出函数执行结果：John Doe</div></pre></td></tr></table></figure></p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>1.JavaScript对象:属性和方法的容器;<br>2.对象的属性之间一定要用逗号隔开;<br>3.对象的方法定义了一个函数，并作为对象的属性存储。<br>4.对象方法通过添加 () 调用 (作为一个函数)。</p>
+<h3 id="JavaScript-函数"><a href="#JavaScript-函数" class="headerlink" title="JavaScript 函数"></a>JavaScript 函数</h3>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[github账号添加SSH key]]></title>
+      <url>/2017/07/17/add-SSH-Keys/</url>
+      <content type="html"><![CDATA[<h2 id="生成SSH-key"><a href="#生成SSH-key" class="headerlink" title="生成SSH key"></a>生成SSH key</h2><h3 id="终端输入ssh-keygen-t-rsa-C-“username”"><a href="#终端输入ssh-keygen-t-rsa-C-“username”" class="headerlink" title="终端输入ssh-keygen -t rsa -C “username”"></a>终端输入ssh-keygen -t rsa -C “username”</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;username&quot; (注：username为你git上的用户名)</div></pre></td></tr></table></figure>
+<p>如果执行成功。返回<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file in which to save the key (/Users/username/.ssh/id_rsa):</div></pre></td></tr></table></figure></p>
+<p>首先，说明一下，这里的username是你电脑上的用户名<br>然后，在这里就是设置存储地址了.我们直接按回车，会出现一下两种情况的一种：<br>（1）如果正常运行的话，会出现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Enter passphrase (empty for no passphrase):</div></pre></td></tr></table></figure></p>
+<h3 id="然后我们直接回车"><a href="#然后我们直接回车" class="headerlink" title="然后我们直接回车"></a>然后我们直接回车</h3><p>（2）有的时候我们可能会出现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/Users/your username/.ssh/id_rsa already exists.</div><div class="line">Overwrite (y/n)?</div></pre></td></tr></table></figure></p>
+<p>这说明你已经设置了存储地址，我们输入“y”覆盖<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Overwrite (y/n)? y</div></pre></td></tr></table></figure></p>
+<h3 id="回车出现again"><a href="#回车出现again" class="headerlink" title="回车出现again"></a>回车出现again</h3><p>上面的任意两种情况之后，会出现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Enter same passphrase again:</div></pre></td></tr></table></figure></p>
+<h3 id="再次回车，生成成功："><a href="#再次回车，生成成功：" class="headerlink" title="再次回车，生成成功："></a>再次回车，生成成功：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">Your identification has been saved in /Users/username/.ssh/id_rsa.</div><div class="line">Your public key has been saved in /Users/username/.ssh/id_rsa.pub.</div><div class="line">The key fingerprint is:</div><div class="line">58:42:8b:58:ad:4b:b5:b9:6d:79:bf:8c:f9:e2:2b:ed </div><div class="line">username</div><div class="line">The key&apos;s randomart image is:</div><div class="line">+--[ RSA 2048]----+</div><div class="line">|    ...          |</div><div class="line">|   o oo.         |</div><div class="line">|  . .ooo.        |</div><div class="line">|    o o+         |</div><div class="line">|   . ..oS.       |</div><div class="line">|    . . + .      |</div><div class="line">|       . o .     |</div><div class="line">|        . o+.    |</div><div class="line">|         +E++.   |</div><div class="line">+-----------------+</div></pre></td></tr></table></figure>
+<p>这说明SSH key就已经生成了。文件目录就是：/Users/username/.ssh/id_rsa.pub.<br>我们执行cat命令查看文件的内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat /User/username/.ssh/id_rsa.pub</div></pre></td></tr></table></figure></p>
+<p>这时候会看见：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-rsa AAAAB3NzaC1yc2...</div></pre></td></tr></table></figure></p>
+<p>后面的内容我省略了<br>(说明：ssh-rsa 后面的内容这就是你的SSH keys)<br>把显示出来的SSH<br> keys直接添加到github账户设置里边的SSH keys<br>最后再执行git clone命令就可以了</p>
+<h2 id="使用git遇到的问题"><a href="#使用git遇到的问题" class="headerlink" title="使用git遇到的问题"></a>使用git遇到的问题</h2><p>我们在使用git clone 或其他命令的时候，有时候会遇到这类问题，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">fatal: Could not read from remote repository.</div><div class="line"></div><div class="line">Please make sure you have the correct access rights</div><div class="line">and the repository exists.</div><div class="line">fatal: Could not read from remote</div><div class="line"> repository.Please make sure you</div><div class="line"> have the correct access rights and the repository exists.</div></pre></td></tr></table></figure></p>
+<p>出现这个问题是因为没有在github账号添加SSH key，按上面的步骤添加就可以了~</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[教你用Hexo+Github 搭建属于自己的博客]]></title>
+      <url>/2017/07/14/hexo-github/</url>
+      <content type="html"><![CDATA[<h2 id="大概可以分为以下几个步骤"><a href="#大概可以分为以下几个步骤" class="headerlink" title="大概可以分为以下几个步骤"></a>大概可以分为以下几个步骤</h2><ol>
+<li>搭建环境准备（包括node.js和git环境，gitHub账户的配置）</li>
+<li>安装Hexo</li>
+<li>配置Hexo</li>
+<li>怎样将Hexo与github page 联系起来</li>
+<li>怎样发布文章</li>
+<li>主题 推荐</li>
+<li>主题Net的简单配置</li>
+<li>添加sitemap和feed插件</li>
+<li>添加404 公益页面</li>
+</ol>
+<h2 id="搭建环境准备"><a href="#搭建环境准备" class="headerlink" title="搭建环境准备"></a>搭建环境准备</h2><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大概可以分为以下三步</em></p>
+<ol>
+<li>Node.js 的安装和准备 </li>
+<li>git的安装和准备 </li>
+<li>gitHub账户的配置</li>
+</ol>
+<h2 id="配置Node-js环境"><a href="#配置Node-js环境" class="headerlink" title="配置Node.js环境"></a>配置Node.js环境</h2><p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下载Node.js安装文件：</em></p>
+<p>Windows Installer 32-bit<br>Windows Installer 64-bit<br>根据自己的Windows版本选择相应的安装文件，要是不知道，就安装32-bit的吧- -。 如图所示：</p>
+<p><img src="/images/hexo/node.jpg" alt="node"></p>
+<p>保持默认设置即可，一路Next，安装很快就结束了。 然后我们检查一下是不是要求的组件都安装好了</p>
+<h2 id="配置Git环境"><a href="#配置Git环境" class="headerlink" title="配置Git环境"></a>配置Git环境</h2><h2 id="github账户的注册和配置"><a href="#github账户的注册和配置" class="headerlink" title="github账户的注册和配置"></a>github账户的注册和配置</h2><h3 id="创建代码库"><a href="#创建代码库" class="headerlink" title="创建代码库"></a>创建代码库</h3><p>登陆之后，点击页面右上角的加号，选择New repository：<br><img src="/images/hexo/git.png" alt="git"></p>
+<h3 id="新建代码库"><a href="#新建代码库" class="headerlink" title="新建代码库"></a>新建代码库</h3><p>进入代码库创建页面：<br>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述（不写也没有关系），如图所示：<br><img src="/images/hexo/git1.png" alt="Repository"></p>
+<p><strong>注意：比如我的github名称是jj ,这里你就填 jj.github.io,如果你的名字是sunny，那你就填 sunny.github.io</strong></p>
+<h3 id="代码库设置"><a href="#代码库设置" class="headerlink" title="代码库设置"></a>代码库设置</h3><p>正确创建之后，你将会看到如下界面：<br><img src="/images/hexo/git2.png" alt="github"></p>
+<p>接下来开启gh-pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，选择theme，生成访问地址，如图：</p>
+<p><img src="/images/hexo/git3.png" alt="theme"></p>
+<p>如果yourname.github.io已经可以正常访问了，那么Github一侧的配置已经全部结束了。<br>到此搭建hexo博客的相关环境配置已经完成，下面开始讲解Hexo的相关配置</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>在自己认为合适的地方创建一个文件夹，并在命令行的窗口进入到该目录</p>
+<h3 id="设置npm淘宝镜像站"><a href="#设置npm淘宝镜像站" class="headerlink" title="设置npm淘宝镜像站"></a>设置npm淘宝镜像站</h3><p>1.npm默认的源的下载速度可能很慢，建议使用淘宝镜像替换。<br>2.执行下面的命令，将npm的源设置成淘宝镜像站。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm config set registry &quot;https://registry.npm.taobao.org&quot;</div><div class="line"></div><div class="line">或者</div><div class="line"></div><div class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
+<p>执行以下命令安装hexo。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># 安装hexo</div><div class="line">npm install hexo-cli g</div><div class="line"># 在博客文件夹blog中初始化hexo</div><div class="line">hexo init</div><div class="line"># 安装hexo的扩展插件</div><div class="line">npm install</div><div class="line"></div><div class="line">或者</div><div class="line"></div><div class="line">sudo cnpm install hero-cli -g</div><div class="line">hexo init</div><div class="line">sudo cnpm install</div></pre></td></tr></table></figure></p>
+<p>首次体验Hexo<br>继续操作，同样是在命令行中，输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># 生成静态页面</div><div class="line">hexo generate</div><div class="line"># 开启本地服务器</div><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+<p>然后会提示：</p>
+<p>INFO Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.<br>在浏览器中打开<a href="http://localhost:4000/，你将会看到你的博客~" target="_blank" rel="external">http://localhost:4000/，你将会看到你的博客~</a></p>
+<p>到目前为止，Hexo在本地的配置已经全都结束了。<br>下面会讲解怎样将Hexo与github page 联系起来</p>
+<h2 id="怎样将Hexo与github-page-联系起来"><a href="#怎样将Hexo与github-page-联系起来" class="headerlink" title="怎样将Hexo与github page 联系起来"></a>怎样将Hexo与github page 联系起来</h2><p>大概分为以下几步 </p>
+<blockquote>
+<p>配置git个人信息<br>配置Deployment</p>
+</blockquote>
+<h3 id="配置Git个人信息"><a href="#配置Git个人信息" class="headerlink" title="配置Git个人信息"></a>配置Git个人信息</h3><p>如果你之前已经配置好git个人信息，请跳过这一个 步骤，直接来到</p>
+<h3 id="设置Git的user-name和email：-如果是第一次的话"><a href="#设置Git的user-name和email：-如果是第一次的话" class="headerlink" title="设置Git的user name和email：(如果是第一次的话)"></a>设置Git的user name和email：(如果是第一次的话)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;xx&quot;</div><div class="line">git config --global user.email &quot;xxx@163.com&quot;</div></pre></td></tr></table></figure>
+<h3 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;xxx@163.com&quot;</div></pre></td></tr></table></figure>
+<h3 id="配置Deployment"><a href="#配置Deployment" class="headerlink" title="配置Deployment"></a>配置Deployment</h3><p>同样在_config.yml文件中，找到Deployment，然后按照如下修改：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  # 类型</div><div class="line">  type: git</div><div class="line">  # 仓库</div><div class="line">  repo: git@github.com:yourname/yourname.github.io.git</div><div class="line">  # 分支</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>比如我的仓库的地址是git@github.com:sunny/sunny.github.io.git，所以配置如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:sunny/sunny.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<h3 id="写博客、发布文章"><a href="#写博客、发布文章" class="headerlink" title="写博客、发布文章"></a>写博客、发布文章</h3><p>输入下面的命令新建一篇博客，并将hexo博客部署到github中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># 新建一篇文章</div><div class="line">hexo new &quot;article title&quot;</div><div class="line"># 清空静态页面</div><div class="line">hexo clean</div><div class="line"># 生成静态页面</div><div class="line">hexo generate</div><div class="line"># 部署 </div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
+<p>这时候在我的 电脑的目录下 \hexo\source\ _posts 将会看到 article title.md 文件，用MarDown编辑器打开就可以编辑文章了</p>
+<h2 id="hexo命令缩写"><a href="#hexo命令缩写" class="headerlink" title="hexo命令缩写"></a>hexo命令缩写</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#生成静态页面</div><div class="line">hexo g：hexo generate </div><div class="line"># 清空静态页面</div><div class="line">hexo c：hexo clean</div><div class="line"># 开启本地服务器</div><div class="line">hexo s：hexo server</div><div class="line"># 部署 </div><div class="line">hexo d：hexo deploy</div></pre></td></tr></table></figure>
+<p>当然你也可以执行下面的命令，相当于上面两条命令的效果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"># 清除、生成、启动</div><div class="line">hexo clean &amp;&amp; hexo g -s</div><div class="line"># 清除、生成、部署</div><div class="line">hexo clean &amp;&amp; hexo g -d</div><div class="line"># 生成、启动</div><div class="line">hexo g -s</div><div class="line"># 生成、部署</div><div class="line">hexo g -d</div><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
+<p>部署成功后访问 你的地址，<a href="https://yourName.github.io（这里输入我的地址：" target="_blank" rel="external">https://yourName.github.io（这里输入我的地址：</a> <a href="https://sunny-jj.github.io" target="_blank" rel="external">https://sunny-jj.github.io</a> ),将可以看到生成的文章。</p>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><h3 id="hexo-deploy没有反应？"><a href="#hexo-deploy没有反应？" class="headerlink" title="hexo deploy没有反应？"></a>hexo deploy没有反应？</h3><p>修改配置文件：_config.yml时，冒号后面没加空格。</p>
+<h3 id="hexo-s-网站打不开？"><a href="#hexo-s-网站打不开？" class="headerlink" title="hexo s 网站打不开？"></a>hexo s 网站打不开？</h3><p>端口占用，换个端口就好了。执行命令hexo s -p 5000，并在浏览器地址栏输入<a href="http://localhost:5000，回车访问。" target="_blank" rel="external">http://localhost:5000，回车访问。</a></p>
+<h3 id="如何换主题？"><a href="#如何换主题？" class="headerlink" title="如何换主题？"></a>如何换主题？</h3><p>将主题下载后，放到themes文件夹中即可。例如，下面命令安装next主题：<br>git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a> themes/next<br><a href="http://theme-next.iissnan.com/getting-started.html#sidebar-settings" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html#sidebar-settings</a></p>
+<h2 id="hexo3-0以上版本问题"><a href="#hexo3-0以上版本问题" class="headerlink" title="hexo3.0以上版本问题"></a>hexo3.0以上版本问题</h2><h3 id="搭建-hexo，在执行-hexo-deploy-后-出现-error-deployer-not-found-github-的错误"><a href="#搭建-hexo，在执行-hexo-deploy-后-出现-error-deployer-not-found-github-的错误" class="headerlink" title="搭建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误"></a>搭建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误</h3><p>1.deploy的type 的github需要改成git<br>2.npm install hexo-deployer-git –save 改了之后执行，然后再部署</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[markdown]]></title>
+      <url>/2014/08/12/markdown/</url>
+      <content type="html"><![CDATA[<h2 id="斜体和粗体"><a href="#斜体和粗体" class="headerlink" title="斜体和粗体"></a>斜体和粗体</h2><p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">*斜体*或_斜体_</div><div class="line">**粗体**</div><div class="line">***加粗斜体***</div><div class="line">~~删除线~~</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong><br><strong>粗体</strong><br><strong><em>加粗斜体</em></strong><br><del>删除线</del></p>
+<h2 id="分级标题-index"><a href="#分级标题-index" class="headerlink" title="分级标题 #index"></a>分级标题 #index</h2><p><strong>第一种写法：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">这是一个一级标题</div><div class="line">============================</div><div class="line">这是一个二级标题</div><div class="line">--------------------------------------------------</div></pre></td></tr></table></figure>
+<p><strong>第二种写法：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 一级标题</div><div class="line">## 二级标题</div><div class="line">### 三级标题</div><div class="line">#### 四级标题</div><div class="line">##### 五级标题</div><div class="line">###### 六级标题</div></pre></td></tr></table></figure></p>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><blockquote>
+<p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。</p>
+</blockquote>
+<h3 id="行内式"><a href="#行内式" class="headerlink" title="行内式"></a>行内式</h3><p><strong>语法说明</strong></p>
+<blockquote>
+<p>[ ]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。<a href="链接地址 “链接标题”">链接文字</a>’这样的形式。链接地址与链接标题前有一个空格。</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">欢迎来到[sunny-jj](https://sunny-jj.github.io)</div><div class="line">欢迎来到[sunny-jj](https://sunny-jj.github.io &quot;sunny-jj&quot;)</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong><br>欢迎来到<a href="https://sunny-jj.github.io" target="_blank" rel="external">sunny-jj</a><br>欢迎来到<a href="https://sunny-jj.github.io" title="sunny-jj" target="_blank" rel="external">sunny-jj</a></p>
+<h3 id="参考式"><a href="#参考式" class="headerlink" title="参考式"></a>参考式</h3><blockquote>
+<p>参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。</p>
+</blockquote>
+<p><strong>语法说明：</strong></p>
+<blockquote>
+<p>参考式链接分为两部分，文中的写法 [链接文字][链接标记]，在文本的任意位置添加[链接标记]:链接地址 “链接标题”，链接地址与链接标题前有一个空格。</p>
+<p>如果链接文字本身可以做为链接标记，你也可以写成[链接文字][]<br>[链接文字]：链接地址的形式，见代码的最后一行。</p>
+</blockquote>
+<p><strong>代码：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">我经常去的几个网站[Google][1]、[Baidu][2]以及[自己的博客][3]</div><div class="line">[Leanote 笔记][2]是一个不错的[网站][]。</div><div class="line">[1]:http://www.google.com &quot;Google&quot;</div><div class="line">[2]:https://www.baidu.com/ &quot;Baidu&quot;</div><div class="line">[3]:https://sunny-jj.github.io &quot;sunny-jj&quot;</div><div class="line">[网站]:https://sunny-jj.github.io</div></pre></td></tr></table></figure>
+<p><strong>显示效果：</strong><br>我经常去的几个网站<a href="http://www.google.com" title="Google" target="_blank" rel="external">Google</a>、<a href="https://www.baidu.com/" title="Baidu" target="_blank" rel="external">Leanote</a>以及<a href="https://sunny-jj.github.io" title="sunny-jj" target="_blank" rel="external">自己的博客</a><br><a href="https://www.baidu.com/" title="Baidu" target="_blank" rel="external">Leanote 笔记</a>是一个不错的<a href="https://sunny-jj.github.io" target="_blank" rel="external">网站</a>。</p>
+<h3 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h3><p><strong>语法说明： </strong></p>
+<blockquote>
+<p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;http://example.com/&gt;</div><div class="line">&lt;address@example.com&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong><br><a href="http://example.com/" target="_blank" rel="external">http://example.com/</a><br><a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#97;&#x64;&#100;&#114;&#x65;&#115;&#115;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#108;&#x65;&#46;&#x63;&#111;&#x6d;">&#97;&#x64;&#100;&#114;&#x65;&#115;&#115;&#x40;&#101;&#x78;&#x61;&#x6d;&#x70;&#108;&#x65;&#46;&#x63;&#111;&#x6d;</a></p>
+<h2 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h2><blockquote>
+<p>网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。</p>
+</blockquote>
+<p><strong>注意： </strong></p>
+<ol>
+<li>Markdown Extra 只支持在标题后插入锚点，其它地方无效。 </li>
+<li>Leanote 编辑器右侧显示效果区域暂时不支持锚点跳转，所以点来点去发现没有跳转不必惊慌，但是你发布成笔记或博文后是支持跳转的。</li>
+</ol>
+<p><strong>语法描述： </strong></p>
+<blockquote>
+<p>在你准备跳转到的指定标题后插入锚点 #标记，然后在文档的其它地方写上连接到锚点的链接。</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">## 0. 分级标题 #index</div><div class="line">跳转到[分级标题11](#index)</div></pre></td></tr></table></figure></p>
+<p>跳转到<a href="#index">分级标题</a></p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><blockquote>
+<p>使用 *，+，- 表示无序列表。</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- 无序列表项 一</div><div class="line">- 无序列表项 二</div><div class="line">- 无序列表项 三</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<ul>
+<li>无序列表项 一</li>
+<li>无序列表项 二</li>
+<li>无序列表项 三</li>
+</ul>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><blockquote>
+<p>有序列表则使用数字接着一个英文句点。</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1. 有序列表项 一</div><div class="line">2. 有序列表项 二</div><div class="line">3. 有序列表项 三</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<ol>
+<li>有序列表项 一</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+<h3 id="定义型列表"><a href="#定义型列表" class="headerlink" title="定义型列表"></a>定义型列表</h3><p><strong>语法说明：</strong></p>
+<blockquote>
+<p>定义型列表由名词和解释组成。一行写上定义，紧跟一行写上解释。解释的写法:紧跟一个缩进(Tab)</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Markdown</div><div class="line">:    轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）</div><div class="line">代码块 2</div><div class="line">:    这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）</div><div class="line">        代码块（左侧有八个不可见的空格）</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<p>Markdown<br>:    轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）<br>代码块 2<br>:    这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）</p>
+<h3 id="列表缩进"><a href="#列表缩进" class="headerlink" title="列表缩进"></a>列表缩进</h3><p><strong>语法说明：</strong></p>
+<blockquote>
+<p>列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。</p>
+</blockquote>
+<p><strong>要让列表看起来更漂亮，你可以把内容用固定的缩进整理好（显示效果与代码一致）：</strong></p>
+<ul>
+<li>列表<br>列表</li>
+</ul>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">* 列表</div><div class="line">列表</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<ul>
+<li>列表<br>列表</li>
+</ul>
+<h3 id="包含引用的列表"><a href="#包含引用的列表" class="headerlink" title="包含引用的列表"></a>包含引用的列表</h3><p><strong>语法说明：</strong></p>
+<blockquote>
+<p>如果要在列表项目内放进引用，那 &gt; 就需要缩进：</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">*   阅读的方法:</div><div class="line">    &gt; 打开书本。</div><div class="line">    &gt; 打开电灯。</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<ul>
+<li>阅读的方法:<blockquote>
+<p>打开书本。<br>打开电灯。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="包含代码区块的引用"><a href="#包含代码区块的引用" class="headerlink" title="包含代码区块的引用"></a>包含代码区块的引用</h3><p><strong>语法说明： </strong></p>
+<blockquote>
+<p>如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符：</p>
+</blockquote>
+<p><strong>一列表项包含一个列表区块：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;代码写在这&gt;</div></pre></td></tr></table></figure>
+<h3 id="一个特殊情况"><a href="#一个特殊情况" class="headerlink" title="一个特殊情况"></a>一个特殊情况</h3><blockquote>
+<p>在特殊情况下，项目列表很可能会不小心产生，像是下面这样的写法：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1986. What a great season.</div></pre></td></tr></table></figure>
+<p><strong>会显示成：</strong></p>
+<ol>
+<li>What a great season.</li>
+</ol>
+<blockquote>
+<p>换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1986\. What a great season.</div></pre></td></tr></table></figure>
+<p><strong>会显示成：*</strong></p>
+<p>1986. What a great season.</p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p><strong>语法说明：</strong></p>
+<blockquote>
+<p>引用需要在被引用的文本前加上&gt;符号。</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt; 这是一个有两段文字的引用,</div><div class="line">&gt; 无意义的占行文字1.</div><div class="line">&gt; 无意义的占行文字2.</div><div class="line">&gt; </div><div class="line">&gt; 无意义的占行文字3.</div><div class="line">&gt; 无意义的占行文字4.</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<blockquote>
+<p>这是一个有两段文字的引用,<br>无意义的占行文字1.<br>无意义的占行文字2.</p>
+<p>无意义的占行文字3.<br>无意义的占行文字4.</p>
+</blockquote>
+<p><strong>Markdown 也允许你偷懒只在整个段落的第一行最前面加上 &gt; ：</strong></p>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt; 这是一个有两段文字的引用,</div><div class="line">无意义的占行文字1.</div><div class="line">无意义的占行文字2.</div><div class="line">&gt; 无意义的占行文字3.</div><div class="line">无意义的占行文字4.</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<blockquote>
+<p>这是一个有两段文字的引用,<br>无意义的占行文字1.<br>无意义的占行文字2.<br>无意义的占行文字3.<br>无意义的占行文字4.</p>
+</blockquote>
+<h3 id="引用的多层嵌套"><a href="#引用的多层嵌套" class="headerlink" title="引用的多层嵌套"></a>引用的多层嵌套</h3><blockquote>
+<p>区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 &gt; ：</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 请问 Markdwon 怎么用？ - 小白</div><div class="line">&gt;&gt; 自己看教程！ - 愤青</div><div class="line">&gt; 教程在哪？ - 小白</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>请问 Markdwon 怎么用？ - 小白<br>自己看教程！ - 愤青<br>教程在哪？ - 小白</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="引用其它要素"><a href="#引用其它要素" class="headerlink" title="引用其它要素"></a>引用其它要素</h3><blockquote>
+<p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt; 1.   这是第一行列表项。</div><div class="line">&gt; 2.   这是第二行列表项。</div><div class="line">&gt; </div><div class="line">&gt; 给出一些例子代码：</div><div class="line">&gt; </div><div class="line">&gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<blockquote>
+<ol>
+<li>这是第一行列表项。</li>
+<li>这是第二行列表项。</li>
+</ol>
+<p>给出一些例子代码：</p>
+<pre><code>return shell_exec(&quot;echo $input | $markdown_script&quot;);
+</code></pre></blockquote>
+<h2 id="插入图像"><a href="#插入图像" class="headerlink" title="插入图像"></a>插入图像</h2><blockquote>
+<p>图片的创建方式与超链接相似，而且和超链接一样也有两种写法，行内式和参考式写法。</p>
+<p>语法中图片Alt的意思是如果图片因为某些原因不能显示，就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样，表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的，可以省略，但建议写上。</p>
+</blockquote>
+<h3 id="行内式-1"><a href="#行内式-1" class="headerlink" title="行内式"></a>行内式</h3><blockquote>
+<p>语法说明：!<a href="图片地址 “图片Title”">图片Alt</a></p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">我的头像： </div><div class="line">![我的头像](/images/author.gif &quot;我的头像&quot;)</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<p>我的头像:<br><img src="/images/author.gif" alt="我的头像" title="我的头像"> </p>
+<h3 id="参考式-1"><a href="#参考式-1" class="headerlink" title="参考式"></a>参考式</h3><p><strong>语法说明：</strong></p>
+<blockquote>
+<p>在文档要插入图片的地方写![图片Alt][标记]</p>
+<p>在文档的最后写上[标记]:图片地址 “Title”</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">我的头像:</div><div class="line">![我的头像][logo]</div><div class="line">[logo]:/images/author.gif &quot;我的头像&quot;</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong><br><img src="/images/author.gif" alt="我的头像" title="我的头像"></p>
+<h2 id="内容目录"><a href="#内容目录" class="headerlink" title="内容目录"></a>内容目录</h2><blockquote>
+<p>在段落中填写 [TOC] 以显示全文内容的目录结构。</p>
+<p>效果参见最上方的目录</p>
+</blockquote>
+<h2 id="注脚"><a href="#注脚" class="headerlink" title="注脚"></a>注脚</h2><p><strong>语法说明：</strong></p>
+<blockquote>
+<p>在需要添加注脚的文字后加上脚注名字[^注脚名字],称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字。</p>
+<p>注意：经测试注脚与注脚之间必须空一行，不然会失效。成功后会发现，即使你没有把注脚写在文末，经Markdown转换后，也会自动归类到文章的最后。</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。</div><div class="line">[^1]:Markdown是一种纯文本标记语言</div><div class="line">[^2]:HyperText Markup Language 超文本标记语言</div><div class="line">[^Le]:开源笔记平台，支持Markdown和笔记直接发为博文</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong><br>使用 Markdown<a href="Markdown是一种纯文本标记语言">^1</a>可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote<a href="开源笔记平台，支持Markdown和笔记直接发为博文">^Le</a> 编辑器进行书写。</p>
+<p>[^2]:HyperText Markup Language 超文本标记语言</p>
+<h2 id="LaTeX-公式"><a href="#LaTeX-公式" class="headerlink" title="LaTeX 公式"></a>LaTeX 公式</h2><h3 id="表示行内公式："><a href="#表示行内公式：" class="headerlink" title="$ 表示行内公式："></a>$ 表示行内公式：</h3><p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<p>质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。</p>
+<p>###$$ 表示整行公式：</p>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$$\sum_&#123;i=1&#125;^n a_i=0$$</div><div class="line">$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$</div><div class="line">$$\sum^&#123;j-1&#125;_&#123;k=0&#125;&#123;\widehat&#123;\gamma&#125;_&#123;kj&#125; z_k&#125;$$</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong><br>$$\sum_{i=1}^n a_i=0$$<br>$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x<em>n^2 $$<br>$$\sum^{j-1}</em>{k=0}{\widehat{\gamma}_{kj} z_k}$$</p>
+<p>访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="external">MathJax</a> 参考更多使用方法。</p>
+<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">flow</div><div class="line">st=&gt;start: Start:&gt;https://www.zybuluo.com</div><div class="line">io=&gt;inputoutput: verification</div><div class="line">op=&gt;operation: Your Operation</div><div class="line">cond=&gt;condition: Yes or No?</div><div class="line">sub=&gt;subroutine: Your Subroutine</div><div class="line">e=&gt;end</div><div class="line">st-&gt;io-&gt;op-&gt;cond</div><div class="line">cond(yes)-&gt;e</div><div class="line">cond(no)-&gt;sub-&gt;io</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong><br>flow<br>st=&gt;start: Start:&gt;<a href="https://www.zybuluo.com" target="_blank" rel="external">https://www.zybuluo.com</a><br>io=&gt;inputoutput: verification<br>op=&gt;operation: Your Operation<br>cond=&gt;condition: Yes or No?<br>sub=&gt;subroutine: Your Subroutine<br>e=&gt;end<br>st-&gt;io-&gt;op-&gt;cond<br>cond(yes)-&gt;e<br>cond(no)-&gt;sub-&gt;io</p>
+<p>更多语法参考：<a href="http://adrai.github.io/flowchart.js/" target="_blank" rel="external">流程图语法参考</a></p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p><strong>语法说明：</strong></p>
+<blockquote>
+<p>不管是哪种方式，第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。<br>列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。<br>第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。</p>
+</blockquote>
+<p><strong>代码：</strong></p>
+<p><strong>简单方式写表格：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">学号|姓名|分数</div><div class="line">-|-|-</div><div class="line">小明|男|75</div><div class="line">小红|女|79</div><div class="line">小陆|男|92</div></pre></td></tr></table></figure></p>
+<p><strong>原生方式写表格：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">|学号|姓名|分数|</div><div class="line">|-|-|-|</div><div class="line">|小明|男|75|</div><div class="line">|小红|女|79|</div><div class="line">|小陆|男|92|</div></pre></td></tr></table></figure></p>
+<p><strong>为表格第二列指定方向：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">产品|价格</div><div class="line">-|-:</div><div class="line">Leanote 高级账号|60元/年</div><div class="line">Leanote 超级账号|120元/年</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果： </strong><br><strong>简单方式写表格：</strong></p>
+<table>
+<thead>
+<tr>
+<th>学号</th>
+<th>姓名</th>
+<th>分数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小明</td>
+<td>男</td>
+<td>75</td>
+</tr>
+<tr>
+<td>小红</td>
+<td>女</td>
+<td>79</td>
+</tr>
+<tr>
+<td>小陆</td>
+<td>男</td>
+<td>92</td>
+</tr>
+</tbody>
+</table>
+<p><strong>原生方式写表格：</strong></p>
+<table>
+<thead>
+<tr>
+<th>学号</th>
+<th>姓名</th>
+<th>分数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小明</td>
+<td>男</td>
+<td>75</td>
+</tr>
+<tr>
+<td>小红</td>
+<td>女</td>
+<td>79</td>
+</tr>
+<tr>
+<td>小陆</td>
+<td>男</td>
+<td>92</td>
+</tr>
+</tbody>
+</table>
+<p><strong>为表格第二列指定方向：</strong></p>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th style="text-align:right">价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leanote 高级账号</td>
+<td style="text-align:right">60元/年</td>
+</tr>
+<tr>
+<td>Leanote 超级账号</td>
+<td style="text-align:right">120元/年</td>
+</tr>
+</tbody>
+</table>
+<h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h2><blockquote>
+<p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
+</blockquote>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">* * *</div><div class="line">***</div><div class="line">*****</div><div class="line">- - -</div><div class="line">---------------------------------------</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果都一样：</strong></p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><blockquote>
+<p>对于程序员来说这个功能是必不可少的，插入程序代码的方式有两种，一种是利用缩进(Tab), 另一种是利用”`”符号（一般在ESC键下方）包裹代码。</p>
+</blockquote>
+<p><strong>语法说明：</strong></p>
+<p>插入行内代码，即插入一个单词或者一句代码的情况，使用<code>code</code>这样的形式插入。<br>插入多行代码，可以使用缩进或者“<code>code “</code>,具体看示例。<br>注意： 缩进式插入前方必须有空行</p>
+<h3 id="行内式-2"><a href="#行内式-2" class="headerlink" title="行内式"></a>行内式</h3><p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C语言里的函数 `scanf()` 怎么使用？</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<p>C语言里的函数 <code>scanf()</code> 怎么使用？</p>
+<h3 id="缩进式多行代码"><a href="#缩进式多行代码" class="headerlink" title="缩进式多行代码"></a>缩进式多行代码</h3><p>缩进 4 个空格或是 1 个制表符</p>
+<p>一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p>
+<p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdio.h&gt;</div><div class="line">int main(void)</div><div class="line">&#123;</div><div class="line">    printf(&quot;Hello world\n&quot;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<p>#include <stdio.h><br>    int main(void)<br>    {<br>        printf(“Hello world\n”);<br>    }</stdio.h></p>
+<h3 id="用六个-包裹多行代码"><a href="#用六个-包裹多行代码" class="headerlink" title="用六个`包裹多行代码"></a>用六个`包裹多行代码</h3><p><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdio.h&gt;</div><div class="line">int main(void)</div><div class="line">&#123;</div><div class="line">    printf(&quot;Hello world\n&quot;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>显示效果：</strong></p>
+<p>#include <stdio.h><br>int main(void)<br>{<br>    printf(“Hello world\n”);<br>}</stdio.h></p>
+<h2 id="表格-1"><a href="#表格-1" class="headerlink" title="表格"></a>表格</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">First Header | Second Header | Third Header</div><div class="line">------------ | ------------- | ------------</div><div class="line">Content Cell | Content Cell  | Content Cell</div><div class="line">Content Cell | Content Cell  | Content Cell</div></pre></td></tr></table></figure>
+<p><strong>显示效果：</strong></p>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+<th>Third Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+<p><strong>或者也可以让表格两边内容对齐，中间内容居中，例如：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">First Header | Second Header | Third Header</div><div class="line">:----------- | :-----------: | -----------:</div><div class="line">Left         | Center        | Right</div><div class="line">Left         | Center        | Right</div></pre></td></tr></table></figure>
+<p><strong>显示效果：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">First Header</th>
+<th style="text-align:center">Second Header</th>
+<th style="text-align:right">Third Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Left</td>
+<td style="text-align:center">Center</td>
+<td style="text-align:right">Right</td>
+</tr>
+<tr>
+<td style="text-align:left">Left</td>
+<td style="text-align:center">Center</td>
+<td style="text-align:right">Right</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      
+        
+    </entry>
+    
+  
+  
 </search>

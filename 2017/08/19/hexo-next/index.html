@@ -55,17 +55,23 @@
 
 
 
-<meta name="description" content="只要勇敢尝试 就有无限可能">
+<meta name="description" content="安装 NexT Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下， 然后修改下配置文件即可。具体到 NexT 来说，安装步骤如下:  下载主题 如果你熟悉 Git， 建议你使用 克隆最新版本 的方式，之后的更新可以通过 git pull 来快速更新， 而不用再次下载压缩包替换。  在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo next 设置">
 <meta property="og:url" content="http://yoursite.com/2017/08/19/hexo-next/index.html">
 <meta property="og:site_name" content="想起了谁">
-<meta property="og:description" content="只要勇敢尝试 就有无限可能">
+<meta property="og:description" content="安装 NexT Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下， 然后修改下配置文件即可。具体到 NexT 来说，安装步骤如下:  下载主题 如果你熟悉 Git， 建议你使用 克隆最新版本 的方式，之后的更新可以通过 git pull 来快速更新， 而不用再次下载压缩包替换。  在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-19T11:11:17.000Z">
+<meta property="og:image" content="http://yoursite.com/images/next/next1.png">
+<meta property="og:image" content="http://yoursite.com/images/next/next2.png">
+<meta property="og:image" content="http://yoursite.com/images/next/next3.png">
+<meta property="og:image" content="http://yoursite.com/images/next/next4.png">
+<meta property="og:image" content="http://yoursite.com/images/next/next5.png">
+<meta property="og:updated_time" content="2017-08-26T10:35:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo next 设置">
-<meta name="twitter:description" content="只要勇敢尝试 就有无限可能">
+<meta name="twitter:description" content="安装 NexT Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下， 然后修改下配置文件即可。具体到 NexT 来说，安装步骤如下:  下载主题 如果你熟悉 Git， 建议你使用 克隆最新版本 的方式，之后的更新可以通过 git pull 来快速更新， 而不用再次下载压缩包替换。  在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代">
+<meta name="twitter:image" content="http://yoursite.com/images/next/next1.png">
 
 
 
@@ -275,7 +281,242 @@
       
 
       
-        
+        <h2 id="安装-NexT"><a href="#安装-NexT" class="headerlink" title="安装 NexT"></a>安装 NexT</h2><blockquote>
+<p>Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下， 然后修改下配置文件即可。具体到 NexT 来说，安装步骤如下:</p>
+</blockquote>
+<h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><blockquote>
+<p>如果你熟悉 Git， 建议你使用 克隆最新版本 的方式，之后的更新可以通过 git pull 来快速更新， 而不用再次下载压缩包替换。</p>
+</blockquote>
+<p>在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd your-hexo-site</div><div class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure></p>
+<p>或者： </p>
+<ol>
+<li>前往 <a href="https://github.com/iissnan/hexo-theme-next/releases" target="_blank" rel="external">NexT 版本 发布页面</a>。</li>
+<li><p>选择你所需要的版本，下载 Download 区域下的 Source Code (zip) 到本地。例如，下载 v0.4.0 版本：<br><img src="/images/next/next1.png" alt="NexT 版本 发布页面" title="NexT 版本 发布页面"></p>
+</li>
+<li><p>解压所下载的压缩包至站点的 themes 目录下， 并将 解压后的文件夹名称（hexo-theme-next-0.4.0）更改为 next。</p>
+</li>
+</ol>
+<h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h3><p>与所有 Hexo 主题启用的模式一样。 当 克隆/下载 完成后，打开 站点配置文件， 找到 theme 字段，并将其值更改为 next。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">启用 NexT 主题</div><div class="line">theme: next</div></pre></td></tr></table></figure></p>
+<p>到此，NexT 主题安装完成。下一步我们将验证主题是否正确启用。在切换主题之后、验证之前， 我们最好使用 hexo clean 来清除 Hexo 的缓存。</p>
+<h3 id="验证主题"><a href="#验证主题" class="headerlink" title="验证主题"></a>验证主题</h3><p>首先启动 Hexo 本地站点，并开启调试模式（即加上 –debug），整个命令是 hexo s –debug。 在服务启动的过程，注意观察命令行输出是否有任何异常信息，如果你碰到问题，这些信息将帮助他人更好的定位错误。 当命令行输出中提示出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure></p>
+<p>此时即可使用浏览器访问 <a href="http://localhost:4000，检查站点是否正确运行。" target="_blank" rel="external">http://localhost:4000，检查站点是否正确运行。</a></p>
+<blockquote>
+<p>当你看到站点的外观与下图所示类似时即说明你已成功安装 NexT 主题。这是 NexT 默认的 Scheme —— Muse</p>
+</blockquote>
+<p><img src="/images/next/next2.png" alt="NexT 主题" title="NexT 主题"></p>
+<p>现在，你已经成功安装并启用了 NexT 主题。下一步我们将要更改一些主题的设定，包括个性化以及集成第三方服务。</p>
+<h2 id="主题设定"><a href="#主题设定" class="headerlink" title="主题设定"></a>主题设定</h2><h3 id="选择-Scheme"><a href="#选择-Scheme" class="headerlink" title="选择 Scheme"></a>选择 Scheme</h3><p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 为你提供多种不同的外观。同时，几乎所有的配置都可以 在 Scheme 之间共用。目前 NexT 支持三种 Scheme，他们是：</p>
+<ul>
+<li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li>
+<li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
+<li>Pisces - 双栏 Scheme，小家碧玉似的清新</li>
+</ul>
+<p>Scheme 的切换通过更改 主题配置文件，搜索 scheme 关键字。 你会看到有三行 scheme 的配置，将你需用启用的 scheme 前面注释 # 去除即可。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#scheme: Muse</div><div class="line">#scheme: Mist</div><div class="line">scheme: Pisces</div></pre></td></tr></table></figure>
+<h3 id="设置-语言"><a href="#设置-语言" class="headerlink" title="设置 语言"></a>设置 语言</h3><p>编辑 站点配置文件， 将 language 设置成你所需要的语言。建议明确设置你所需要的语言，例如选用简体中文，配置如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans</div></pre></td></tr></table></figure></p>
+<p>目前 NexT 支持的语言如以下表格所示：</p>
+<table>
+<thead>
+<tr>
+<th>语言</th>
+<th>代码</th>
+<th>设定示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>English</td>
+<td>en</td>
+<td>language: en</td>
+</tr>
+<tr>
+<td>简体中文</td>
+<td>zh-Hans</td>
+<td>language: zh-Hans</td>
+</tr>
+<tr>
+<td>Français</td>
+<td>fr-FR</td>
+<td>language: fr-FR</td>
+</tr>
+<tr>
+<td>Português</td>
+<td>pt</td>
+<td>language: pt or language: pt-BR</td>
+</tr>
+<tr>
+<td>繁體中文</td>
+<td>zh-hk 或者 zh-tw</td>
+<td>language: zh-hk</td>
+</tr>
+<tr>
+<td>Русский язык</td>
+<td>ru</td>
+<td>language: ru</td>
+</tr>
+<tr>
+<td>Deutsch</td>
+<td>de</td>
+<td>language: de</td>
+</tr>
+<tr>
+<td>日本語</td>
+<td>ja</td>
+<td>language: ja</td>
+</tr>
+<tr>
+<td>Indonesian</td>
+<td>id</td>
+<td>language: id</td>
+</tr>
+<tr>
+<td>Korean</td>
+<td>ko</td>
+<td>language: ko</td>
+</tr>
+</tbody>
+</table>
+<h3 id="设置-菜单"><a href="#设置-菜单" class="headerlink" title="设置 菜单"></a>设置 菜单</h3><p>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 NexT 使用的是 Font Awesome 提供的图标， Font Awesome 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 Retina 屏幕下 图标模糊的问题。</p>
+<p>编辑 主题配置文件，修改以下内容：</p>
+<p>1、设定菜单内容，对应的字段是 menu。 菜单内容的设置格式是：item name: link。其中 item name 是一个名称，这个名称并不直接显示在页面上，她将用于匹配图标以及翻译。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">菜单示例配置</div><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  archives: /archives</div><div class="line">  #about: /about</div><div class="line">  #categories: /categories</div><div class="line">  tags: /tags</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>若你的站点运行在子目录中，请将链接前缀的 / 去掉</p>
+</blockquote>
+<p>NexT 默认的菜单项有（标注  的项表示需要手动创建这个页面）：</p>
+<table>
+<thead>
+<tr>
+<th>键值</th>
+<th>设定值</th>
+<th>显示文本（简体中文）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>home</td>
+<td>home: /</td>
+<td>主页</td>
+</tr>
+<tr>
+<td>archives</td>
+<td>archives: /archives</td>
+<td>归档页</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>categories: /categories</td>
+<td>分类页 !</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>tags: /tags</td>
+<td>标签页 !</td>
+</tr>
+<tr>
+<td>about</td>
+<td>about: /about</td>
+<td>关于页面 !</td>
+</tr>
+<tr>
+<td>commonweal</td>
+<td>commonweal: /404.html</td>
+<td>公益 404 !</td>
+</tr>
+</tbody>
+</table>
+<p>2、设置菜单项的显示文本。在第一步中设置的菜单的名称并不直接用于界面上的展示。Hexo 在生成的时候将使用 这个名称查找对应的语言翻译，并提取显示文本。这些翻译文本放置在 NexT 主题目录下的 languages/{language}.yml （{language} 为你所使用的语言）。</p>
+<p>以简体中文为例，若你需要添加一个菜单项，比如 something。那么就需要修改简体中文对应的翻译文件 languages/zh-Hans.yml，在 menu 字段下添加一项：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: 首页</div><div class="line">  archives: 归档</div><div class="line">  categories: 分类</div><div class="line">  tags: 标签</div><div class="line">  about: 关于</div><div class="line">  search: 搜索</div><div class="line">  commonweal: 公益404</div><div class="line">  something: 有料</div></pre></td></tr></table></figure></p>
+<p>3、设定菜单项的图标，对应的字段是 menu_icons。 此设定格式是 item name: icon name，其中 item name 与上一步所配置的菜单名字对应，icon name 是 Font Awesome 图标的 名字。而 enable 可用于控制是否显示图标，你可以设置成 false 来去掉图标。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">菜单图标配置示例</div><div class="line">menu_icons:</div><div class="line">  enable: true</div><div class="line">  # Icon Mapping.</div><div class="line">  home: home</div><div class="line">  about: user</div><div class="line">  categories: th</div><div class="line">  tags: tags</div><div class="line">  archives: archive</div><div class="line">  commonweal: heartbeat</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>在菜单图标开启的情况下，如果菜单项与菜单未匹配（没有设置或者无效的 Font Awesome 图标名字） 的情况下，NexT 将会使用  作为图标。</p>
+<p>请注意键值（如 home）的大小写要严格匹配</p>
+</blockquote>
+<h3 id="设置-侧栏"><a href="#设置-侧栏" class="headerlink" title="设置 侧栏"></a>设置 侧栏</h3><p>默认情况下，侧栏仅在文章页面（拥有目录列表）时才显示，并放置于右侧位置。 可以通过修改 主题配置文件 中的 sidebar 字段来控制侧栏的行为。侧栏的设置包括两个部分，其一是侧栏的位置， 其二是侧栏显示的时机。</p>
+<p>1、设置侧栏的位置，修改 sidebar.position 的值，支持的选项有：</p>
+<ul>
+<li>left - 靠左放置</li>
+<li>right - 靠右放置</li>
+</ul>
+<blockquote>
+<p>目前仅 Pisces Scheme 支持 position 配置。影响版本5.0.0及更低版本。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sidebar:</div><div class="line">  position: left</div></pre></td></tr></table></figure>
+<p>2、设置侧栏显示的时机，修改 sidebar.display 的值，支持的选项有：</p>
+<ul>
+<li>post - 默认行为，在文章页面（拥有目录列表）时显示</li>
+<li>always - 在所有页面中都显示</li>
+<li>hide - 在所有页面中都隐藏（可以手动展开）</li>
+<li>remove - 完全移除</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sidebar:</div><div class="line">  display: post</div></pre></td></tr></table></figure>
+<blockquote>
+<p>已知侧栏在 use motion: false 的情况下不会展示。 影响版本5.0.0及更低版本。</p>
+</blockquote>
+<h3 id="设置-头像"><a href="#设置-头像" class="headerlink" title="设置 头像"></a>设置 头像</h3><p>编辑 主题配置文件， 修改字段 avatar， 值设置成头像的链接地址。其中，头像的链接地址可以是：</p>
+<table>
+<thead>
+<tr>
+<th>地址</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>完整的互联网 URI</td>
+<td><a href="http://example.com/avatar.png" target="_blank" rel="external">http://example.com/avatar.png</a></td>
+</tr>
+<tr>
+<td>站点内的地址</td>
+<td>将头像放置主题目录下的 source/uploads/ （新建 uploads 目录若不存在） <br>配置为：avatar: /uploads/avatar.png <br>或者 放置在 source/images/ 目录下 <br>配置为：avatar: /images/avatar.png</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">头像设置示例</div><div class="line">avatar: http://example.com/avatar.png</div></pre></td></tr></table></figure>
+<h3 id="设置-作者昵称"><a href="#设置-作者昵称" class="headerlink" title="设置 作者昵称"></a>设置 作者昵称</h3><p>编辑 站点配置文件， 设置 author 为你的昵称。</p>
+<h3 id="站点描述"><a href="#站点描述" class="headerlink" title="站点描述"></a>站点描述</h3><p>编辑 站点配置文件， 设置 description 字段为你的站点描述。站点描述可以是你喜欢的一句签名:)</p>
+<h2 id="集成常用的第三方服务"><a href="#集成常用的第三方服务" class="headerlink" title="集成常用的第三方服务"></a>集成常用的第三方服务</h2><h3 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h3><blockquote>
+<p>注意： baidu_analytics 不是你的百度 id 或者 百度统计 id</p>
+</blockquote>
+<p>1、登录 <a href="http://tongji.baidu.com/" target="_blank" rel="external">百度统计</a>， 定位到站点的代码获取页面<br>2、复制 hm.js? 后面那串统计脚本 id，如：<br><img src="/images/next/next3.png" alt="百度统计" title="百度统计"></p>
+<p>3、编辑 主题配置文件， 修改字段 baidu_analytics 字段，值设置成你的百度统计脚本 id。</p>
+<h3 id="阅读次数统计（LeanCloud）-由-Doublemine-贡献"><a href="#阅读次数统计（LeanCloud）-由-Doublemine-贡献" class="headerlink" title="阅读次数统计（LeanCloud） 由 Doublemine 贡献"></a>阅读次数统计（LeanCloud） 由 Doublemine 贡献</h3><p>请查看 <a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="external">为NexT主题添加文章阅读量统计功能</a></p>
+<h2 id="其他设置"><a href="#其他设置" class="headerlink" title="其他设置"></a>其他设置</h2><h3 id="添加动态线条背景"><a href="#添加动态线条背景" class="headerlink" title="添加动态线条背景"></a>添加动态线条背景</h3><p>1、 修改_layout.swig<br>打开  next/layout/_layout.swig<br>在 &lt; /body&gt;之前添加代码(注意不要放在&lt; /head&gt;的后面)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% if theme.canvas_nest %&#125;</div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&#123;% endif %&#125;</div></pre></td></tr></table></figure></p>
+<p>2、修改配置文件</p>
+<p>打开 /next/_config.yml,在里面添加如下代码：(可以放在最后面)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># --------------------------------------------------------------</div><div class="line"># background settings</div><div class="line"># --------------------------------------------------------------</div><div class="line"># add canvas-nest effect</div><div class="line"># see detail from https://github.com/hustcc/canvas-nest.js</div><div class="line">canvas_nest: true</div></pre></td></tr></table></figure></p>
+<p>到此就结束了，运行 hexo clean，然后运行 hexo g,然后运行 hexo s，最后打开浏览器在浏览器的地址栏输入 localhost:4000 就能看到效果了\（￣︶￣）/</p>
+<p>3、如果你感觉默认的线条太多的话</p>
+<p>可以这么设置：</p>
+<p>在上一步修改  _layout.swig中，把刚才的这些代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;% if theme.canvas_nest %&#125;</div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&#123;% endif %&#125;</div><div class="line">改为</div><div class="line"></div><div class="line">&#123;% if theme.canvas_nest %&#125;</div><div class="line">&lt;script type=&quot;text/javascript&quot;</div><div class="line">color=&quot;0,0,255&quot; opacity=&apos;0.7&apos; zIndex=&quot;-2&quot; count=&quot;99&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</div><div class="line">&#123;% endif %&#125;</div></pre></td></tr></table></figure></p>
+<p>4、配置项说明</p>
+<ul>
+<li>color ：线条颜色, 默认: ‘0,0,0’；三个数字分别为(R,G,B)</li>
+<li>opacity: 线条透明度（0~1）, 默认: 0.5</li>
+<li>count: 线条的总数量, 默认: 150</li>
+<li>zIndex: 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1</li>
+</ul>
+<h3 id="让首页不显示全文"><a href="#让首页不显示全文" class="headerlink" title="让首页不显示全文"></a>让首页不显示全文</h3><h4 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h4><blockquote>
+<p>要解决这个问题有两个方法：一是修改 _config.yml 文件设置，而是直接在你的 md 中加一句代码即可。</p>
+</blockquote>
+<p>第一种方法</p>
+<p>用文本编辑器打开 themes/next 目录下的 _config.yml 文件，找到这段代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># Automatically Excerpt. Not recommend.</div><div class="line"># Please use &lt;!-- more --&gt; in the post to control excerpt accurately.</div><div class="line">auto_excerpt:</div><div class="line">  enable: false</div><div class="line">  length: 150</div></pre></td></tr></table></figure></p>
+<p>把 enable 的 false 改成 true 就行了，然后 length 是设定文章预览的文本长度。</p>
+<p>修改后重启 hexo 就ok了。</p>
+<p>第二种方法</p>
+<p>在你写 md 文章的时候，可以在内容中加上 <a id="more"></a>，这样首页和列表页展示的文章内容就是 <!--more--> 之前的文字，而之后的就不会显示了。</p>
+<h4 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h4><p>上面两种方式展示出来的效果是不一样的。</p>
+<p>第一种修改 _config.yml 文件的效果是会格式化你文章的样式，直接把文字挤在一起显示，最后会有 …<br><img src="/images/next/next4.png" alt="第一种" title="第一种"></p>
+<p>而第二种加上 <!--more--> 展示出来的就是你原本文章的样式，最后不会有…</p>
+<p><img src="/images/next/next5.png" alt="第二种" title="第二种"></p>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>Hexo提供的Local Search,原理是通过hexo-generator-search插件在本地生成一个search.xml文件，搜索的时候从这个文件中根据关键字检索出相应的链接。</p>
+<h4 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h4><p>1、安装 hexo-generator-search</p>
+<p>在站点的根目录下执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-generator-search --save</div></pre></td></tr></table></figure></p>
+<p>2、安装 hexo-generator-searchdb</p>
+<p>在站点的根目录下执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-generator-searchdb --save</div></pre></td></tr></table></figure></p>
+<p>3、启用搜索</p>
+<p>编辑 站点配置文件，新增以下内容到任意位置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">search:</div><div class="line">  path: search.xml</div><div class="line">  field: post</div><div class="line">  format: html</div><div class="line">  limit: 10000</div></pre></td></tr></table></figure></p>
+<h2 id="踩过的坑"><a href="#踩过的坑" class="headerlink" title="踩过的坑"></a>踩过的坑</h2><h3 id="ERROR-Deployer-not-found-github"><a href="#ERROR-Deployer-not-found-github" class="headerlink" title="ERROR Deployer not found: github"></a>ERROR Deployer not found: github</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div><div class="line">ERROR Deployer not found: github</div></pre></td></tr></table></figure>
+<p>解决办法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">第一：安装</div><div class="line">npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">第二：检查配置文件type是否为git</div><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  # 类型</div><div class="line">  type: git</div><div class="line">  # 仓库</div><div class="line">  repo: git@github.com:Sunny-JJ/Sunny-JJ.github.io.git</div><div class="line">  # 分支</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -400,7 +641,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-NexT"><span class="nav-number">1.</span> <span class="nav-text">安装 NexT</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载主题"><span class="nav-number">1.1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用主题"><span class="nav-number">1.2.</span> <span class="nav-text">启用主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证主题"><span class="nav-number">1.3.</span> <span class="nav-text">验证主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题设定"><span class="nav-number">2.</span> <span class="nav-text">主题设定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择-Scheme"><span class="nav-number">2.1.</span> <span class="nav-text">选择 Scheme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-语言"><span class="nav-number">2.2.</span> <span class="nav-text">设置 语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-菜单"><span class="nav-number">2.3.</span> <span class="nav-text">设置 菜单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-侧栏"><span class="nav-number">2.4.</span> <span class="nav-text">设置 侧栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-头像"><span class="nav-number">2.5.</span> <span class="nav-text">设置 头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-作者昵称"><span class="nav-number">2.6.</span> <span class="nav-text">设置 作者昵称</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#站点描述"><span class="nav-number">2.7.</span> <span class="nav-text">站点描述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#集成常用的第三方服务"><span class="nav-number">3.</span> <span class="nav-text">集成常用的第三方服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#百度统计"><span class="nav-number">3.1.</span> <span class="nav-text">百度统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#阅读次数统计（LeanCloud）-由-Doublemine-贡献"><span class="nav-number">3.2.</span> <span class="nav-text">阅读次数统计（LeanCloud） 由 Doublemine 贡献</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他设置"><span class="nav-number">4.</span> <span class="nav-text">其他设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加动态线条背景"><span class="nav-number">4.1.</span> <span class="nav-text">添加动态线条背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#让首页不显示全文"><span class="nav-number">4.2.</span> <span class="nav-text">让首页不显示全文</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方法"><span class="nav-number">4.2.1.</span> <span class="nav-text">解决方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#效果"><span class="nav-number">4.2.2.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索"><span class="nav-number">4.3.</span> <span class="nav-text">搜索</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装步骤"><span class="nav-number">4.3.1.</span> <span class="nav-text">安装步骤</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#踩过的坑"><span class="nav-number">5.</span> <span class="nav-text">踩过的坑</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ERROR-Deployer-not-found-github"><span class="nav-number">5.1.</span> <span class="nav-text">ERROR Deployer not found: github</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
